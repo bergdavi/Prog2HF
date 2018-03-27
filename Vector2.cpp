@@ -40,6 +40,9 @@ bool Vector2::inCircle(Vector2 p1, Vector2 o, double r) {
     double angle = atan2(v1.y, v1.x) - atan2(v2.y, v2.x);
 
     double rat = abs(v1)*cos(angle) / abs(v2);
+    if(rat < 0 || rat > 1){
+        return false;
+    }
 
     Vector2 intersect = *this+(v2*rat);
 
@@ -52,7 +55,7 @@ Vector2 Vector2::rotateAround(Vector2 p, double angle) {
     double c = cos(angle);
 
     double newx = n.getX()*c-n.getY()*s;
-    double newy = n.getX()*s-n.getY()*c;
+    double newy = n.getX()*s+n.getY()*c;
 
     return Vector2(newx, newy) + p;
 }

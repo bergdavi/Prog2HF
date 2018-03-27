@@ -23,8 +23,11 @@ bool Circle::contains(Vector2 p) {
     return abs(center-point) >= abs(center-p);
 }
 
-void Circle::print(std::ostream& os) const{
-    //os << "Circle " << center << " " << point;
+void Circle::draw(std::ostream& os, int shift, int s) const{
     double r = abs(center-point);
-    os << "<circle cx=\"" << (int)center.getX()+500 << "\" cy=\"" << (int)center.getY()+500 << "\" r=\"" << (int)r << "\"/>";
+    os << "<circle cx=\"" << (center.getX()*s)+shift << "\" cy=\"" << (-center.getY()*s)+shift << "\" r=\"" << (r*s) << "\" stroke=\"black\" stroke-width=\"2\" fill=\"transparent\"/>" << std::endl;
+}
+void Circle::print(std::ostream& os) const{
+    os << "Circle " << center << " " << point;
+
 }

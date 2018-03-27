@@ -11,10 +11,11 @@ Polygon::Polygon(Vector2 center, Vector2 point, int sides):Shape(center, point),
 bool Polygon::inCircle(Vector2 c, double r) {
     Vector2 t = point;
     Vector2 t1 = point.rotateAround(center, M_PI*2/sides);
+    bool inC = true;
     for(int i = 0; i < sides; i++){
         int a = c.aboveLine(t, t1);
-        if(a == 0 || a == center.aboveLine(t,t1)){
-            return true;
+        if(a != center.aboveLine(t,t1)){
+            inC = false;
         }
 
         if(t.inCircle(t1, c, r)){
@@ -25,7 +26,7 @@ bool Polygon::inCircle(Vector2 c, double r) {
         t1 = t1.rotateAround(center, M_PI*2/sides);
 
     }
-    return false;
+    return inC;
 }
 bool Polygon::contains(Vector2 p) {
     Vector2 t = point;
@@ -41,18 +42,20 @@ bool Polygon::contains(Vector2 p) {
     return true;
 }
 
-void Polygon::print(std::ostream& os) const {
-    //os << "Polygon " << center << " " << point << " " << sides;
+void Polygon::draw(std::ostream& os, int shift, int s) const {
     os << "<polyline points=\"";
     Vector2 t = point;
-    for(int i = 0; i < sides; i++){
-        os << (int)t.getX()+500 << " " << (int)t.getY()+500;
-        if(i < sides-1){
+    for(int i = 0; i < sides+1; i++){
+        os << (t.getX()*s)+shift << " " << (-t.getY()*s)+shift;
+        if(i < sides){
             os << ", ";
         }
-        t = t.rotateAround(center, M_PI*2/4);
+        t = t.rotateAround(center, M_PI*2/sides);
     }
-    os << "\"/>";
+    os << "\" stroke=\"black\" stroke-width=\"2\" fill=\"transparent\"/>" << std::endl;
+}
+void Polygon::print(std::ostream& os) const {
+    os << "Polygon " << center << " " << point << " " << sides;
 }
 
 Polygon::~Polygon()

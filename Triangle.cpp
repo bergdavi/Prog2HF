@@ -18,10 +18,11 @@ Triangle::~Triangle()
 bool Triangle::inCircle(Vector2 c, double r) {
     Vector2 t = point;
     Vector2 t1 = point.rotateAround(center, M_PI*2/3);
+    bool inC = true;
     for(int i = 0; i < 3; i++){
         int a = c.aboveLine(t, t1);
-        if(a == 0 || a == center.aboveLine(t,t1)){
-            return true;
+        if(a != center.aboveLine(t,t1)){
+            inC = false;
         }
 
         if(t.inCircle(t1, c, r)){
@@ -32,7 +33,7 @@ bool Triangle::inCircle(Vector2 c, double r) {
         t1 = t1.rotateAround(center, M_PI*2/3);
 
     }
-    return false;
+    return inC;
 }
 bool Triangle::contains(Vector2 p) {
     Vector2 t = point;
@@ -48,16 +49,18 @@ bool Triangle::contains(Vector2 p) {
     return true;
 }
 
-void Triangle::print(std::ostream& os) const {
-    //os << "Triangle " << center << " " << point;
+void Triangle::draw(std::ostream& os, int shift, int s) const {
     os << "<polyline points=\"";
     Vector2 t = point;
-    for(int i = 0; i < 3; i++){
-        os << (int)t.getX()+500 << " " << (int)t.getY()+500;
-        if(i < 2){
+    for(int i = 0; i < 4; i++){
+        os << (t.getX()*s)+shift << " " << (-t.getY()*s)+shift;
+        if(i < 3){
             os << ", ";
         }
-        t = t.rotateAround(center, M_PI*2/4);
+        t = t.rotateAround(center, M_PI*2/3);
     }
-    os << "\"/>";
+    os << "\" stroke=\"black\" stroke-width=\"2\" fill=\"transparent\"/>" << std::endl;
+}
+void Triangle::print(std::ostream& os) const {
+    os << "Triangle " << center << " " << point;
 }
