@@ -42,7 +42,17 @@ bool Polygon::contains(Vector2 p) {
 }
 
 void Polygon::print(std::ostream& os) const {
-    os << "Polygon " << center << " " << point << " " << sides;
+    //os << "Polygon " << center << " " << point << " " << sides;
+    os << "<polyline points=\"";
+    Vector2 t = point;
+    for(int i = 0; i < sides; i++){
+        os << (int)t.getX()+500 << " " << (int)t.getY()+500;
+        if(i < sides-1){
+            os << ", ";
+        }
+        t = t.rotateAround(center, M_PI*2/4);
+    }
+    os << "\"/>";
 }
 
 Polygon::~Polygon()

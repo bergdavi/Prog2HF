@@ -56,7 +56,7 @@
 1521752265 c:\users\bergh\documents\prog2\sikidom\polygon.h
 	"Shape.h"
 
-1521759322 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\circle.cpp
+1522140542 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\circle.cpp
 	"Circle.h"
 	<iostream>
 
@@ -72,7 +72,7 @@
 1522137187 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\vector2.h
 	<iostream>
 
-1522137863 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\main.cpp
+1522139672 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\main.cpp
 	<iostream>
 	"Vector2.h"
 	"Shape.h"
@@ -98,15 +98,15 @@
 	"Circle.h"
 	"Polygon.h"
 
-1522139078 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\square.cpp
+1522140500 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\square.cpp
 	"Square.h"
 	<iostream>
 
-1522139031 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\triangle.cpp
+1522140525 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\triangle.cpp
 	"Triangle.h"
 	<iostream>
 
-1522138965 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\polygon.cpp
+1522140553 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\polygon.cpp
 	"Polygon.h"
 
 1522138431 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\vector2.cpp

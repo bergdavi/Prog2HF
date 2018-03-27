@@ -49,5 +49,15 @@ bool Triangle::contains(Vector2 p) {
 }
 
 void Triangle::print(std::ostream& os) const {
-    os << "Triangle " << center << " " << point;
+    //os << "Triangle " << center << " " << point;
+    os << "<polyline points=\"";
+    Vector2 t = point;
+    for(int i = 0; i < 3; i++){
+        os << (int)t.getX()+500 << " " << (int)t.getY()+500;
+        if(i < 2){
+            os << ", ";
+        }
+        t = t.rotateAround(center, M_PI*2/4);
+    }
+    os << "\"/>";
 }

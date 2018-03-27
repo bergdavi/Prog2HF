@@ -46,5 +46,15 @@ bool Square::contains(Vector2 p) {
 }
 
 void Square::print(std::ostream& os) const{
-    os << "Square " << center << " " << point;
+    //os << "Square " << center << " " << point;
+    os << "<polyline points=\"";
+    Vector2 t = point;
+    for(int i = 0; i < 4; i++){
+        os << (int)t.getX()+500 << " " << (int)t.getY()+500;
+        if(i < 3){
+            os << ", ";
+        }
+        t = t.rotateAround(center, M_PI*2/4);
+    }
+    os << "\"/>";
 }

@@ -24,5 +24,7 @@ bool Circle::contains(Vector2 p) {
 }
 
 void Circle::print(std::ostream& os) const{
-    os << "Circle " << center << " " << point;
+    //os << "Circle " << center << " " << point;
+    double r = abs(center-point);
+    os << "<circle cx=\"" << (int)center.getX()+500 << "\" cy=\"" << (int)center.getY()+500 << "\" r=\"" << (int)r << "\"/>";
 }
