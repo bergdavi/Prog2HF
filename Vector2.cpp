@@ -31,6 +31,21 @@ int Vector2::aboveLine(Vector2 p1, Vector2 p2) {
     return 0;
 }
 
+bool Vector2::inCircle(Vector2 p1, Vector2 o, double r) {
+    if(abs(*this-o) <= r || abs(p1-o) <= r) {
+        return true;
+    }
+    Vector2 v1 = o-*this;
+    Vector2 v2 = p1-*this;
+    double angle = atan2(v1.y, v1.x) - atan2(v2.y, v2.x);
+
+    double rat = abs(v1)*cos(angle) / abs(v2);
+
+    Vector2 intersect = *this+(v2*rat);
+
+    return abs(intersect-o) <= r;
+}
+
 Vector2 Vector2::rotateAround(Vector2 p, double angle) {
     Vector2 n = Vector2(x,y)-p;
     double s = sin(angle);
@@ -46,6 +61,8 @@ double abs(Vector2 p) {
     return sqrt(p.x*p.x + p.y*p.y);
 }
 
+
+
 Vector2 Vector2::operator-(const Vector2& v) const {
     Vector2 n(x-v.x, y-v.y);
     return n;
@@ -55,6 +72,17 @@ Vector2 Vector2::operator+(const Vector2& v) const {
     Vector2 n(x+v.x, y+v.y);
     return n;
 }
+
+Vector2 Vector2::operator/(double d) const {
+    Vector2 n(x/d, y/d);
+    return n;
+}
+
+Vector2 Vector2::operator*(double d) const {
+    Vector2 n(x*d, y*d);
+    return n;
+}
+
 
 
 std::ostream& operator<< (std::ostream& os, const Vector2& s) {

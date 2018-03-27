@@ -56,3 +56,60 @@
 1521752265 c:\users\bergh\documents\prog2\sikidom\polygon.h
 	"Shape.h"
 
+1521759322 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\circle.cpp
+	"Circle.h"
+	<iostream>
+
+1521755837 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\circle.h
+	"Shape.h"
+	<iostream>
+
+1521634460 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\shape.h
+	<iostream>
+	<math.h>
+	"Vector2.h"
+
+1522137187 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\vector2.h
+	<iostream>
+
+1522137863 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\main.cpp
+	<iostream>
+	"Vector2.h"
+	"Shape.h"
+	"Square.h"
+	"Circle.h"
+	"Triangle.h"
+	"Polygon.h"
+
+1521755825 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\square.h
+	"Shape.h"
+	<iostream>
+
+1521755831 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\triangle.h
+	"Shape.h"
+
+1521755865 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\polygon.h
+	"Shape.h"
+
+1521718511 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\shape.cpp
+	"Shape.h"
+	"Square.h"
+	"Triangle.h"
+	"Circle.h"
+	"Polygon.h"
+
+1522139078 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\square.cpp
+	"Square.h"
+	<iostream>
+
+1522139031 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\triangle.cpp
+	"Triangle.h"
+	<iostream>
+
+1522138965 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\polygon.cpp
+	"Polygon.h"
+
+1522138431 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\vector2.cpp
+	"Vector2.h"
+	<math.h>
+

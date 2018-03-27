@@ -35,9 +35,18 @@ int main()
 //    cout << Vector2(0,0).aboveLine(Vector2(-1,-1), Vector2(1,1)) << endl;
 
 //    cout << Vector2(0,1).rotateAround(Vector2(0,0), M_PI_2) << endl;
-    Shape *s = new Polygon(Vector2(0,0), Vector2(1,0), 4);
-    cout << s->contains(Vector2(1, 0.3)) << endl;
 
+
+
+//    Shape *s = new Polygon(Vector2(0,0), Vector2(1,0), 4);
+//    cout << s->contains(Vector2(1, 0.3)) << endl;
+
+
+    Vector2 p1(0,0);
+    Vector2 p2(0,10);
+    Vector2 circle(5,5);
+
+    cout << (p1.inCircle(p2, circle, 6)?"y":"n") << endl;
 
     cout << "done" << endl;
     return 0;

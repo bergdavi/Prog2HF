@@ -16,6 +16,7 @@ class Vector2
         void setY(double y);
 
         int aboveLine(Vector2 p1, Vector2 p2);
+        bool inCircle(Vector2 p1, Vector2 o, double r);
 
         Vector2 rotateAround(Vector2 p, double angle);
 
@@ -23,6 +24,8 @@ class Vector2
 
         Vector2 operator-(const Vector2& v) const;
         Vector2 operator+(const Vector2& v) const;
+        Vector2 operator/(double d) const;
+        Vector2 operator*(double d) const;
 
         friend std::istream& operator>> (std::istream& is, Vector2& s);
         friend std::ostream& operator<< (std::ostream& os, const Vector2& s);

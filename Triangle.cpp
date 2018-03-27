@@ -16,6 +16,22 @@ Triangle::~Triangle()
 }
 
 bool Triangle::inCircle(Vector2 c, double r) {
+    Vector2 t = point;
+    Vector2 t1 = point.rotateAround(center, M_PI*2/3);
+    for(int i = 0; i < 3; i++){
+        int a = c.aboveLine(t, t1);
+        if(a == 0 || a == center.aboveLine(t,t1)){
+            return true;
+        }
+
+        if(t.inCircle(t1, c, r)){
+            return true;
+        }
+
+        t = t.rotateAround(center, M_PI*2/3);
+        t1 = t1.rotateAround(center, M_PI*2/3);
+
+    }
     return false;
 }
 bool Triangle::contains(Vector2 p) {
