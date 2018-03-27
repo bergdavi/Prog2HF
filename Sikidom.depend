@@ -1,0 +1,58 @@
+# depslib dependency file v1.0
+1521755722 source:c:\users\bergh\documents\prog2\sikidom\circle.cpp
+	"Circle.h"
+	<iostream>
+
+1521752237 c:\users\bergh\documents\prog2\sikidom\circle.h
+	"Shape.h"
+	<iostream>
+
+1521630860 c:\users\bergh\documents\prog2\sikidom\shape.h
+	<iostream>
+	<math.h>
+	"Vector2.h"
+
+1521763639 source:c:\users\bergh\documents\prog2\sikidom\main.cpp
+	<iostream>
+	"Vector2.h"
+	"Shape.h"
+	"Square.h"
+	"Circle.h"
+	"Triangle.h"
+	"Polygon.h"
+
+1521752225 c:\users\bergh\documents\prog2\sikidom\square.h
+	"Shape.h"
+	<iostream>
+
+1521752231 c:\users\bergh\documents\prog2\sikidom\triangle.h
+	"Shape.h"
+
+1521714911 source:c:\users\bergh\documents\prog2\sikidom\shape.cpp
+	"Shape.h"
+	"Square.h"
+	"Triangle.h"
+	"Circle.h"
+	"Polygon.h"
+
+1521763006 source:c:\users\bergh\documents\prog2\sikidom\square.cpp
+	"Square.h"
+	<iostream>
+
+1521763544 source:c:\users\bergh\documents\prog2\sikidom\triangle.cpp
+	"Triangle.h"
+	<iostream>
+
+1521760068 c:\users\bergh\documents\prog2\sikidom\vector2.h
+	<iostream>
+
+1521760490 source:c:\users\bergh\documents\prog2\sikidom\vector2.cpp
+	"Vector2.h"
+	<math.h>
+
+1521763666 source:c:\users\bergh\documents\prog2\sikidom\polygon.cpp
+	"Polygon.h"
+
+1521752265 c:\users\bergh\documents\prog2\sikidom\polygon.h
+	"Shape.h"
+
