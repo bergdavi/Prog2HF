@@ -42,7 +42,7 @@ bool Polygon::contains(Vector2 p) {
     return true;
 }
 
-void Polygon::draw(std::ostream& os, int shift, int s) const {
+void Polygon::draw(std::ostream& os, int shift, int s, const char* color = "black") const {
     os << "<polyline points=\"";
     Vector2 t = point;
     for(int i = 0; i < sides+1; i++){
@@ -52,7 +52,7 @@ void Polygon::draw(std::ostream& os, int shift, int s) const {
         }
         t = t.rotateAround(center, M_PI*2/sides);
     }
-    os << "\" stroke=\"black\" stroke-width=\"2\" fill=\"transparent\"/>" << std::endl;
+    os << "\" stroke=\"" << color << "\" stroke-width=\"2\" fill=\"transparent\"/>" << std::endl;
 }
 void Polygon::print(std::ostream& os) const {
     os << "Polygon " << center << " " << point << " " << sides;

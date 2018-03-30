@@ -47,7 +47,7 @@ bool Square::contains(Vector2 p) {
 }
 
 
-void Square::draw(std::ostream& os, int shift, int s) const{
+void Square::draw(std::ostream& os, int shift, int s, const char* color = "black") const{
     os << "<polyline points=\"";
     Vector2 t = point;
     for(int i = 0; i < 5; i++){
@@ -58,7 +58,7 @@ void Square::draw(std::ostream& os, int shift, int s) const{
         t = t.rotateAround(center, M_PI*2/4);
 
     }
-    os << "\" stroke=\"black\" stroke-width=\"2\" fill=\"transparent\"/>" << std::endl;
+    os << "\" stroke=\"" << color << "\" stroke-width=\"2\" fill=\"transparent\"/>" << std::endl;
 
 }
 

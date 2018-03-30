@@ -26,7 +26,7 @@ class Shape {
     virtual bool contains(Vector2 p) = 0;
 
     virtual void print(std::ostream& os) const = 0;
-    virtual void draw(std::ostream& os, int shift, int s) const = 0;
+    virtual void draw(std::ostream& os, int shift, int s, const char* color = "black") const = 0;
     friend std::ostream& operator<< (std::ostream& os, const Shape& s);
     friend std::istream& operator>> (std::istream& is, Shape*& s);
 };

@@ -14,7 +14,7 @@ class Polygon : public Shape
         bool inCircle(Vector2 c, double r);
         bool contains(Vector2 p);
 
-        void draw(std::ostream& os, int shift, int s) const;
+        void draw(std::ostream& os, int shift, int s, const char* color) const;
         void print(std::ostream& os) const;
 
     protected:

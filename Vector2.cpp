@@ -23,6 +23,15 @@ void Vector2::setY(double y) {
 
 int Vector2::aboveLine(Vector2 p1, Vector2 p2) {
     Vector2 v = p1-p2;
+    if(v.getX() == 0){
+        if(p1.x > x){
+            return -1;
+        }
+        if(p1.x < x) {
+            return 1;
+        }
+        return 0;
+    }
     double m = v.getY()/v.getX();
     double b = p1.getY()-p1.getX()*m;
     double above = y-(m*x+b);

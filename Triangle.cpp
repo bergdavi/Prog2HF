@@ -49,7 +49,7 @@ bool Triangle::contains(Vector2 p) {
     return true;
 }
 
-void Triangle::draw(std::ostream& os, int shift, int s) const {
+void Triangle::draw(std::ostream& os, int shift, int s, const char* color = "black") const {
     os << "<polyline points=\"";
     Vector2 t = point;
     for(int i = 0; i < 4; i++){
@@ -59,7 +59,7 @@ void Triangle::draw(std::ostream& os, int shift, int s) const {
         }
         t = t.rotateAround(center, M_PI*2/3);
     }
-    os << "\" stroke=\"black\" stroke-width=\"2\" fill=\"transparent\"/>" << std::endl;
+    os << "\" stroke=\"" << color << "\" stroke-width=\"2\" fill=\"transparent\"/>" << std::endl;
 }
 void Triangle::print(std::ostream& os) const {
     os << "Triangle " << center << " " << point;

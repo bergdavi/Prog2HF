@@ -26,6 +26,7 @@ ShapeList::~ShapeList() {
         delete temp;
         temp = p;
     }
+    delete temp;
 }
 
 Shape* ShapeList::first() {

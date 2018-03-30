@@ -56,15 +56,15 @@
 1521752265 c:\users\bergh\documents\prog2\sikidom\polygon.h
 	"Shape.h"
 
-1522146953 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\circle.cpp
+1522365552 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\circle.cpp
 	"Circle.h"
 	<iostream>
 
-1522142862 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\circle.h
+1522365610 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\circle.h
 	"Shape.h"
 	<iostream>
 
-1522146695 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\shape.h
+1522365538 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\shape.h
 	<iostream>
 	<math.h>
 	"Vector2.h"
@@ -72,8 +72,9 @@
 1522137187 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\vector2.h
 	<iostream>
 
-1522149117 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\main.cpp
+1522370312 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\main.cpp
 	<iostream>
+	<fstream>
 	"Vector2.h"
 	"Shape.h"
 	"Square.h"
@@ -81,35 +82,35 @@
 	"Triangle.h"
 	"Polygon.h"
 
-1522142747 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\square.h
+1522365567 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\square.h
 	"Shape.h"
 	<iostream>
 
-1522142805 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\triangle.h
+1522365578 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\triangle.h
 	"Shape.h"
 
-1522142955 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\polygon.h
+1522365618 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\polygon.h
 	"Shape.h"
 
-1521718511 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\shape.cpp
+1522361570 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\shape.cpp
 	"Shape.h"
 	"Square.h"
 	"Triangle.h"
 	"Circle.h"
 	"Polygon.h"
 
-1522148731 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\square.cpp
+1522365573 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\square.cpp
 	"Square.h"
 	<iostream>
 
-1522149009 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\triangle.cpp
+1522365584 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\triangle.cpp
 	"Triangle.h"
 	<iostream>
 
-1522149044 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\polygon.cpp
+1522365624 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\polygon.cpp
 	"Polygon.h"
 
-1522147663 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\vector2.cpp
+1522362056 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\vector2.cpp
 	"Vector2.h"
 	<math.h>
 
