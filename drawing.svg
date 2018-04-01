@@ -4,6 +4,7 @@
 <circle cx="660" cy="500" r="50" stroke="green" stroke-width="2" fill="transparent"/>
 <polyline points="425 575, 345 645, 415 725, 495 655, 425 575" stroke="green" stroke-width="2" fill="transparent"/>
 <polyline points="400 590, 390 800, 600 810, 610 600, 400 590" stroke="red" stroke-width="2" fill="transparent"/>
+<circle cx="520" cy="480" r="2" fill="black"/>
 <line x1="500" x2="500" y1="0" y2="1000" stroke="blue" stroke-width="2" fill="red" stroke-dasharray="10,10"/>
 <line x1="0" x2="1000" y1="500" y2="500" stroke="blue" stroke-width="2" fill="red" stroke-dasharray="10,10"/>
 <circle cx="500" cy="500" r="100" stroke="blue" fill="transparent" stroke-width="2" stroke-dasharray="10,10"/>

@@ -49,6 +49,8 @@ int main()
 
     }
 
+    Vector2(0.2,0.2).draw(svgFile, 500, 100, "black");
+
     svgFile << "<line x1=\"" << canvasSize/2 << "\" x2=\"" << canvasSize/2 << "\" y1=\"0\" y2=\"" << canvasSize << "\" stroke=\"blue\" stroke-width=\"2\" fill=\"red\" stroke-dasharray=\"10,10\"/>" << endl;
     svgFile << "<line x1=\"0\" x2=\"" << canvasSize << "\" y1=\"" << canvasSize/2 << "\" y2=\"" << canvasSize/2 << "\" stroke=\"blue\" stroke-width=\"2\" fill=\"red\" stroke-dasharray=\"10,10\"/>" << endl;
     svgFile << "<circle cx=\"" << canvasSize/2 << "\" cy=\"" << canvasSize/2 << "\" r=\"" << drawSize << "\" stroke=\"blue\" fill=\"transparent\" stroke-width=\"2\" stroke-dasharray=\"10,10\"/>" << endl;

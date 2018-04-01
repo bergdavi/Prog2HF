@@ -107,6 +107,9 @@ std::istream& operator>> (std::istream& is, Vector2& s) {
     return is;
 }
 
+void Vector2::draw(std::ostream& os, int shift, int s, const char* color) const {
+    os << "<circle cx=\"" << (x*s)+shift << "\" cy=\"" << (-y*s)+shift << "\" r=\"" << (2) << "\" fill=\"" << color << "\"/>" << std::endl;
+}
 
 
 Vector2::~Vector2() {

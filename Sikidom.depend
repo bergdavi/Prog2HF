@@ -69,7 +69,7 @@
 	<math.h>
 	"Vector2.h"
 
-1522137187 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\vector2.h
+1522439821 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\vector2.h
 	<iostream>
 
 1522370312 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\main.cpp
@@ -110,7 +110,7 @@
 1522365624 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\polygon.cpp
 	"Polygon.h"
 
-1522362056 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\vector2.cpp
+1522439935 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\vector2.cpp
 	"Vector2.h"
 	<math.h>
 

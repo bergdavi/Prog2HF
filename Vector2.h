@@ -27,6 +27,8 @@ class Vector2
         Vector2 operator/(double d) const;
         Vector2 operator*(double d) const;
 
+        void draw(std::ostream& os, int shift, int s, const char* color) const;
+
         friend std::istream& operator>> (std::istream& is, Vector2& s);
         friend std::ostream& operator<< (std::ostream& os, const Vector2& s);
 
