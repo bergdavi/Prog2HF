@@ -32,17 +32,33 @@ int Vector2::aboveLine(Vector2 p1, Vector2 p2) {
         }
         return 0;
     }
-    double m = v.getY()/v.getX();
-    double b = p1.getY()-p1.getX()*m;
-    double above = y-(m*x+b);
-    if(above > 0) return 1;
-    if(above < 0) return -1;
-    return 0;
+    if(v.getX() == 0) {
+        if(x > p1.x) {
+            return 1;
+        }
+        if(x < p1.x){
+            return -1;
+        }
+        return 0;
+    }
+    else {
+        double m = v.getY()/v.getX();
+        double b = p1.getY()-p1.getX()*m;
+        double above = y-(m*x+b);
+        if(above > 0) return 1;
+        if(above < 0) return -1;
+        return 0;
+    }
+
+
 }
 
 bool Vector2::inCircle(Vector2 p1, Vector2 o, double r) {
     if(abs(*this-o) <= r || abs(p1-o) <= r) {
         return true;
+    }
+    if(abs(p1-*this) == 0) {
+        return abs(*this-o) <= r;
     }
     Vector2 v1 = o-*this;
     Vector2 v2 = p1-*this;
