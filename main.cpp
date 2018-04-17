@@ -6,7 +6,7 @@
 #include "Circle.h"
 #include "Triangle.h"
 #include "Polygon.h"
-#include "gtest_lite.h"
+
 
 using namespace std;
 
@@ -26,6 +26,7 @@ int main()
     inputFile.exceptions ( ifstream::failbit | ifstream::badbit );
     try {
         inputFile.open("in.txt");
+        inputFile.exceptions(ifstream::goodbit);
     }
     catch(const ifstream::failure& e) {
         cerr << "Could not open input file!" << endl;
@@ -33,7 +34,7 @@ int main()
     }
 
     ofstream svgFile;
-    svgFile.exceptions ( ifstream::failbit | ifstream::badbit );
+    svgFile.exceptions ( ofstream::failbit | ofstream::badbit );
     if(drawShapes) {
         try {
         svgFile.open("drawing.svg");
@@ -47,7 +48,7 @@ int main()
 
 
     ShapeList sl = ShapeList();
-
+//
     Shape *s;
     while(inputFile >> s){
         sl.add(s);
@@ -86,12 +87,7 @@ int main()
     }
 
 
-    TEST(Test1, emptyStr) {
-      Shape* s = new Square(Vector2(0,0), Vector2(1,1));
-      EXPECT_EQ(4.0, s->getArea()) << "Nem jo a terulet" << endl;
-      EXPECT_EQ(8.0, s->getCircumference()) << "Nem jo a Kerulet" << endl;
 
-    } ENDM
 
 
 

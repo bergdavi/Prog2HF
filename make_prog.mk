@@ -1,12 +1,12 @@
 PROG = sikidom_test   # a program neve (ezt allitjuk elo)
 PROG_O = Circle.o main.o Polygon.o Shape.o Square.o Triangle.o Vector2.o # program object fajljai 
-PROG_H = Circle.h Polygon.h Shape.h Square.h Triangle.h Vector2.h gtest_lite.h # program header fajljai
+PROG_H = Circle.h Polygon.h Shape.h Square.h Triangle.h Vector2.h # program header fajljai
 PROG_L =              # program libjei
 
 CXX = g++   # a C fordito neve
 #CXX = clang++ # clang-ot (llvm) is erdemes kiprobalni
 CXXFLAGS = -pedantic -Wall -Werror # kapcsolok: legyen bobeszedu es pedans
-CXXFLAGS += -ggdb -DMEMTRACE # es legyen debug info is
+CXXFLAGS += -ggdb # es legyen debug info is
 LDFLAGS = -ggdb # debug a linkelesnel 
 
 # osszes object, osszes header osszes lib

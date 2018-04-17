@@ -72,7 +72,7 @@
 1522439821 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\vector2.h
 	<iostream>
 
-1523950948 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\main.cpp
+1523954782 source:c:\users\bergh\documents\prog2\sikidom-git\prog2hf\main.cpp
 	<iostream>
 	<fstream>
 	"Vector2.h"
@@ -81,7 +81,6 @@
 	"Circle.h"
 	"Triangle.h"
 	"Polygon.h"
-	"gtest_lite.h"
 
 1522365567 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\square.h
 	"Shape.h"
@@ -115,7 +114,7 @@
 	"Vector2.h"
 	<math.h>
 
-1523526123 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\gtest_lite.h
+1523951799 c:\users\bergh\documents\prog2\sikidom-git\prog2hf\gtest_lite.h
 	<iostream>
 	<cassert>
 	<cmath>
