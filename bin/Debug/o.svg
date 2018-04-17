@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000" height="1000">
-<line x1="500" x2="500" y1="0" y2="1000" stroke="red" stroke-width="2" fill="red"/>
-<line x1="0" x2="1000" y1="500" y2="500" stroke="red" stroke-width="2" fill="red"/>
-<circle cx="500" cy="500" r="100" stroke="red" fill="transparent" stroke-width="2"/>
-<polyline points="800 200, 698.898 56.0585, 523.323 45.3576, 405.488 175.955, 434.124 349.509, 587.668 435.329, 750.498 368.791, 800 200" stroke="black" stroke-width="2" fill="transparent"/>
-</svg>
-1
-done
