@@ -1,3 +1,7 @@
+// Berghammer David
+// EB2DYD
+
+
 #include <iostream>
 #include <fstream>
 #include "Vector2.h"

@@ -6,7 +6,7 @@
 #include "Circle.h"
 #include "Triangle.h"
 #include "Polygon.h"
-
+#include "gtest_lite.h"
 
 using namespace std;
 
