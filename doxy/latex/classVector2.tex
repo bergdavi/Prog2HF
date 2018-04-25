@@ -1,0 +1,317 @@
+\hypertarget{classVector2}{}\section{Vector2 oszt√°lyreferencia}
+\label{classVector2}\index{Vector2@{Vector2}}
+
+
+{\ttfamily \#include $<$Vector2.\+h$>$}
+
+\subsection*{Publikus tagf√ºggv√©nyek}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Vector2} (double x, double y)\hypertarget{classVector2_a695ccc36d26cb5f950ed47bfc4e6cfe1}{}\label{classVector2_a695ccc36d26cb5f950ed47bfc4e6cfe1}
+
+\item 
+double \hyperlink{classVector2_aa95fc0408561ce740d50f715a0a6a0e3}{getX} () const 
+\item 
+double \hyperlink{classVector2_a89aad088f250db6e7b016f21d027d4d8}{getY} () const 
+\item 
+void \hyperlink{classVector2_ae531fd0d22dbd12446aecde655addb89}{setX} (double x)
+\item 
+void \hyperlink{classVector2_a28982a58a7b2f1f4f26a0e18add86b29}{setY} (double y)
+\item 
+int \hyperlink{classVector2_ae1a4b4ebbaafee7b9be9f3ca9712d278}{above\+Line} (\hyperlink{classVector2}{Vector2} p1, \hyperlink{classVector2}{Vector2} p2)
+\item 
+bool \hyperlink{classVector2_a42d546ce82d0bb9a89f3898e25e5f729}{in\+Circle} (\hyperlink{classVector2}{Vector2} p1, \hyperlink{classVector2}{Vector2} o, double r)
+\item 
+\hyperlink{classVector2}{Vector2} \hyperlink{classVector2_a5c5f1cad600761ebfb824fc8e94cc652}{rotate\+Around} (\hyperlink{classVector2}{Vector2} p, double angle)
+\item 
+\hyperlink{classVector2}{Vector2} \hyperlink{classVector2_a39dfeea6e55ef1df7b819cf35efd4a79}{operator-\/} (const \hyperlink{classVector2}{Vector2} \&v) const 
+\item 
+\hyperlink{classVector2}{Vector2} \hyperlink{classVector2_a93473ed56b2cedcafe3690572eeeec33}{operator+} (const \hyperlink{classVector2}{Vector2} \&v) const 
+\item 
+\hyperlink{classVector2}{Vector2} \hyperlink{classVector2_afd26b5c14b0a18ae96768bb8d6b66f6b}{operator/} (double d) const 
+\item 
+\hyperlink{classVector2}{Vector2} \hyperlink{classVector2_a22a1f0f1adb3caa056c9917bbc5ab808}{operator$\ast$} (double d) const 
+\item 
+bool \hyperlink{classVector2_a5eca47fbc91d8fe1f7a4af2f23448b09}{operator==} (\hyperlink{classVector2}{Vector2} \&v) const 
+\item 
+void \hyperlink{classVector2_a0732b3e28e8a305cf1299ac390951e9e}{draw} (std\+::ostream \&os, int shift, int s, const char $\ast$color) const 
+\end{DoxyCompactItemize}
+\subsection*{Bar√°tok}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classVector2_afc7cc2ce19911d1716f8b6a000022299}{abs} (\hyperlink{classVector2}{Vector2} p)
+\item 
+std\+::istream \& \hyperlink{classVector2_a05b61bba82a4863c5608c81a9fcc33d3}{operator$>$$>$} (std\+::istream \&is, \hyperlink{classVector2}{Vector2} \&s)
+\item 
+std\+::ostream \& \hyperlink{classVector2_ab2d9846bd786c74e69d771841902f720}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classVector2}{Vector2} \&s)
+\end{DoxyCompactItemize}
+
+
+\subsection{R√©szletes le√≠r√°s}
+\hyperlink{classVector2}{Vector2} oszt·ly KÈtdimenziÛs vektort t·rol 
+
+\subsection{Tagf√ºggv√©nyek dokument√°ci√≥ja}
+\index{Vector2@{Vector2}!above\+Line@{above\+Line}}
+\index{above\+Line@{above\+Line}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{above\+Line(\+Vector2 p1, Vector2 p2)}{aboveLine(Vector2 p1, Vector2 p2)}}]{\setlength{\rightskip}{0pt plus 5cm}int Vector2\+::above\+Line (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{p1, }
+\item[{{\bf Vector2}}]{p2}
+\end{DoxyParamCaption}
+)}\hypertarget{classVector2_ae1a4b4ebbaafee7b9be9f3ca9712d278}{}\label{classVector2_ae1a4b4ebbaafee7b9be9f3ca9712d278}
+A pont egy tetszˆleges egyenes felett van-\/e 
+\begin{DoxyParams}{Param√©terek}
+{\em p1} & -\/ az egyenes 1. pontja \\
+\hline
+{\em p2} & -\/ az egyenes 2. pontja \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+1 ha a pont az egyenes felett van, -\/1 ha az egyenes alatt, 0 ha az egyenesen 
+\end{DoxyReturn}
+\index{Vector2@{Vector2}!draw@{draw}}
+\index{draw@{draw}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{draw(std\+::ostream \&os, int shift, int s, const char $\ast$color) const }{draw(std::ostream &os, int shift, int s, const char *color) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Vector2\+::draw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{int}]{shift, }
+\item[{int}]{s, }
+\item[{const char $\ast$}]{color}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector2_a0732b3e28e8a305cf1299ac390951e9e}{}\label{classVector2_a0732b3e28e8a305cf1299ac390951e9e}
+Vektor rajzol·sa S\+VG form·tumban 
+\begin{DoxyParams}{Param√©terek}
+{\em os} & -\/ ostream objektum, amire rajzolunk \\
+\hline
+{\em shift} & -\/ eltol·s \\
+\hline
+{\em s} & -\/ nagyÌt·s \\
+\hline
+{\em color} & -\/ szÌn \\
+\hline
+\end{DoxyParams}
+\index{Vector2@{Vector2}!getX@{getX}}
+\index{getX@{getX}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{get\+X() const }{getX() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Vector2\+::getX (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector2_aa95fc0408561ce740d50f715a0a6a0e3}{}\label{classVector2_aa95fc0408561ce740d50f715a0a6a0e3}
+X getter \begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+a vektor X koordin·t·ja 
+\end{DoxyReturn}
+\index{Vector2@{Vector2}!getY@{getY}}
+\index{getY@{getY}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{get\+Y() const }{getY() const }}]{\setlength{\rightskip}{0pt plus 5cm}double Vector2\+::getY (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector2_a89aad088f250db6e7b016f21d027d4d8}{}\label{classVector2_a89aad088f250db6e7b016f21d027d4d8}
+Y getter \begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+a vektor Y koordin·t·ja 
+\end{DoxyReturn}
+\index{Vector2@{Vector2}!in\+Circle@{in\+Circle}}
+\index{in\+Circle@{in\+Circle}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{in\+Circle(\+Vector2 p1, Vector2 o, double r)}{inCircle(Vector2 p1, Vector2 o, double r)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Vector2\+::in\+Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{p1, }
+\item[{{\bf Vector2}}]{o, }
+\item[{double}]{r}
+\end{DoxyParamCaption}
+)}\hypertarget{classVector2_a42d546ce82d0bb9a89f3898e25e5f729}{}\label{classVector2_a42d546ce82d0bb9a89f3898e25e5f729}
+Egy szakasz egy tetszˆleges kˆrˆn bel¸l van-\/e 
+\begin{DoxyParams}{Param√©terek}
+{\em p1} & -\/ a szakasz vÈgpontja \\
+\hline
+{\em o} & -\/ a kˆr kˆzÈppontja \\
+\hline
+{\em r} & -\/ a kˆr sugara \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+A szakasz a kˆrˆn bel¸l van-\/e 
+\end{DoxyReturn}
+\index{Vector2@{Vector2}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{operator$\ast$(double d) const }{operator*(double d) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Vector2\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{double}]{d}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector2_a22a1f0f1adb3caa056c9917bbc5ab808}{}\label{classVector2_a22a1f0f1adb3caa056c9917bbc5ab808}
+
+\begin{DoxyItemize}
+\item operator 
+\begin{DoxyParams}{Param√©terek}
+{\em d} & -\/ valÛs szorzÛ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+A vektor d-\/szerese 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\index{Vector2@{Vector2}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{operator+(const Vector2 \&v) const }{operator+(const Vector2 &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Vector2\+::operator+ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2} \&}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector2_a93473ed56b2cedcafe3690572eeeec33}{}\label{classVector2_a93473ed56b2cedcafe3690572eeeec33}
+
+\begin{DoxyItemize}
+\item operator 
+\begin{DoxyParams}{Param√©terek}
+{\em v} & -\/ vektor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+A kÈt vektor ˆsszege 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\index{Vector2@{Vector2}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{operator-\/(const Vector2 \&v) const }{operator-(const Vector2 &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Vector2\+::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Vector2} \&}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector2_a39dfeea6e55ef1df7b819cf35efd4a79}{}\label{classVector2_a39dfeea6e55ef1df7b819cf35efd4a79}
+
+\begin{DoxyItemize}
+\item operator 
+\begin{DoxyParams}{Param√©terek}
+{\em v} & -\/ vektor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+A kÈt vektor k¸lˆnbsÈge 
+\end{DoxyReturn}
+
+\end{DoxyItemize}\index{Vector2@{Vector2}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{operator/(double d) const }{operator/(double d) const }}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Vector2\+::operator/ (
+\begin{DoxyParamCaption}
+\item[{double}]{d}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector2_afd26b5c14b0a18ae96768bb8d6b66f6b}{}\label{classVector2_afd26b5c14b0a18ae96768bb8d6b66f6b}
+/ operator 
+\begin{DoxyParams}{Param√©terek}
+{\em d} & -\/ valÛs szorzÛ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+A vektor 1/d-\/szerese 
+\end{DoxyReturn}
+\index{Vector2@{Vector2}!operator==@{operator==}}
+\index{operator==@{operator==}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{operator==(\+Vector2 \&v) const }{operator==(Vector2 &v) const }}]{\setlength{\rightskip}{0pt plus 5cm}bool Vector2\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2} \&}]{v}
+\end{DoxyParamCaption}
+) const}\hypertarget{classVector2_a5eca47fbc91d8fe1f7a4af2f23448b09}{}\label{classVector2_a5eca47fbc91d8fe1f7a4af2f23448b09}
+== operator 
+\begin{DoxyParams}{Param√©terek}
+{\em v} & -\/ ˆsszehasonlÌtandÛ vektor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+A kÈt vektor azonos-\/e 
+\end{DoxyReturn}
+\index{Vector2@{Vector2}!rotate\+Around@{rotate\+Around}}
+\index{rotate\+Around@{rotate\+Around}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{rotate\+Around(\+Vector2 p, double angle)}{rotateAround(Vector2 p, double angle)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector2} Vector2\+::rotate\+Around (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{p, }
+\item[{double}]{angle}
+\end{DoxyParamCaption}
+)}\hypertarget{classVector2_a5c5f1cad600761ebfb824fc8e94cc652}{}\label{classVector2_a5c5f1cad600761ebfb824fc8e94cc652}
+A pont elforgat·sa egy m·sik pont kˆr¸l 
+\begin{DoxyParams}{Param√©terek}
+{\em p} & -\/ e kˆr¸l a pont kˆr¸l forgatunk \\
+\hline
+{\em angle} & -\/ az elforgat·s szˆge radi·nban \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+Az elforgatott pont 
+\end{DoxyReturn}
+\index{Vector2@{Vector2}!setX@{setX}}
+\index{setX@{setX}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{set\+X(double x)}{setX(double x)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vector2\+::setX (
+\begin{DoxyParamCaption}
+\item[{double}]{x}
+\end{DoxyParamCaption}
+)}\hypertarget{classVector2_ae531fd0d22dbd12446aecde655addb89}{}\label{classVector2_ae531fd0d22dbd12446aecde655addb89}
+X setter 
+\begin{DoxyParams}{Param√©terek}
+{\em x} & -\/ a vektor ˙j X koordin·t·ja \\
+\hline
+\end{DoxyParams}
+\index{Vector2@{Vector2}!setY@{setY}}
+\index{setY@{setY}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{set\+Y(double y)}{setY(double y)}}]{\setlength{\rightskip}{0pt plus 5cm}void Vector2\+::setY (
+\begin{DoxyParamCaption}
+\item[{double}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{classVector2_a28982a58a7b2f1f4f26a0e18add86b29}{}\label{classVector2_a28982a58a7b2f1f4f26a0e18add86b29}
+Y setter 
+\begin{DoxyParams}{Param√©terek}
+{\em x} & -\/ a vektor ˙j X koordin·t·ja \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Bar√°t √©s kapcsol√≥d√≥ f√ºggv√©nyek dokument√°ci√≥ja}
+\index{Vector2@{Vector2}!abs@{abs}}
+\index{abs@{abs}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{abs}{abs}}]{\setlength{\rightskip}{0pt plus 5cm}double abs (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classVector2_afc7cc2ce19911d1716f8b6a000022299}{}\label{classVector2_afc7cc2ce19911d1716f8b6a000022299}
+Vektor hossz·nak kisz·mÌt·sa 
+\begin{DoxyParams}{Param√©terek}
+{\em p} & -\/ a vektor \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+A vektor hossza 
+\end{DoxyReturn}
+\index{Vector2@{Vector2}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{const {\bf Vector2} \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classVector2_ab2d9846bd786c74e69d771841902f720}{}\label{classVector2_ab2d9846bd786c74e69d771841902f720}
+$<$$<$ operator 
+\begin{DoxyParams}{Param√©terek}
+{\em os} & -\/ ostream objektum, amire kiÌrunk \\
+\hline
+{\em s} & -\/ amit kiÌrunk \\
+\hline
+\end{DoxyParams}
+\index{Vector2@{Vector2}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Vector2@{Vector2}}
+\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{is, }
+\item[{{\bf Vector2} \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classVector2_a05b61bba82a4863c5608c81a9fcc33d3}{}\label{classVector2_a05b61bba82a4863c5608c81a9fcc33d3}
+\begin{quote}
+\begin{quote}
+operator \end{quote}
+\end{quote}
+
+\begin{DoxyParams}{Param√©terek}
+{\em is} & -\/ istream objektum, amirˆl beolvasunk \\
+\hline
+{\em s} & -\/ ahova beolvasunk \\
+\hline
+\end{DoxyParams}
+
+
+Ez a dokument√°ci√≥ az oszt√°lyr√≥l a k√∂vetkez≈ë f√°jlok alapj√°n k√©sz√ºlt\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Vector2_8h}{Vector2.\+h}\item 
+Vector2.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,115 @@
+\hypertarget{classTriangle}{}\section{Triangle oszt√°lyreferencia}
+\label{classTriangle}\index{Triangle@{Triangle}}
+
+
+{\ttfamily \#include $<$Triangle.\+h$>$}
+
+\subsection*{Publikus tagf√ºggv√©nyek}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Triangle} (\hyperlink{classVector2}{Vector2} \hyperlink{classShape_a9238c1a46e6e59affa8383648072646c}{center}, \hyperlink{classVector2}{Vector2} \hyperlink{classShape_a12836bd766b32cf6535907b13cf7d9b2}{point})\hypertarget{classTriangle_aa140e74ca110b024bf29527ab7c5e38f}{}\label{classTriangle_aa140e74ca110b024bf29527ab7c5e38f}
+
+\item 
+bool \hyperlink{classTriangle_a221410c631df57f8cda0c63003ce55e0}{in\+Circle} (\hyperlink{classVector2}{Vector2} c, double r)
+\item 
+bool \hyperlink{classTriangle_a70a4da9eceb0324d8ed2d6c406956782}{contains} (\hyperlink{classVector2}{Vector2} p)
+\item 
+void \hyperlink{classTriangle_acb2bda6dfb3dcd7f329b89067d2182e7}{draw} (std\+::ostream \&os, int shift, int s, const char $\ast$color) const 
+\item 
+void \hyperlink{classTriangle_a488a0575e8b5064c938fd25349ca7b4a}{print} (std\+::ostream \&os) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{R√©szletes le√≠r√°s}
+\hyperlink{classTriangle}{Triangle} oszt·ly Szab·lyos h·romszˆget t·rol 
+
+\subsection{Tagf√ºggv√©nyek dokument√°ci√≥ja}
+\index{Triangle@{Triangle}!contains@{contains}}
+\index{contains@{contains}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{contains(\+Vector2 p)}{contains(Vector2 p)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Triangle\+::contains (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classTriangle_a70a4da9eceb0324d8ed2d6c406956782}{}\label{classTriangle_a70a4da9eceb0324d8ed2d6c406956782}
+H·romszˆg tartalmaz-\/e egy pontot 
+\begin{DoxyParams}{Param√©terek}
+{\em p} & -\/ a kÈrdÈses pont \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+tartalmazza-\/e a pontot 
+\end{DoxyReturn}
+
+
+Megval√≥s√≠tja a k√∂vetkez≈ëket\+: \hyperlink{classShape_a498dd2edd52ce57429f991b9890d46c2}{Shape}.
+
+\index{Triangle@{Triangle}!draw@{draw}}
+\index{draw@{draw}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{draw(std\+::ostream \&os, int shift, int s, const char $\ast$color) const }{draw(std::ostream &os, int shift, int s, const char *color) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+::draw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{int}]{shift, }
+\item[{int}]{s, }
+\item[{const char $\ast$}]{color = {\ttfamily \char`\"{}black\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classTriangle_acb2bda6dfb3dcd7f329b89067d2182e7}{}\label{classTriangle_acb2bda6dfb3dcd7f329b89067d2182e7}
+H·romszˆg rajzol·sa S\+VG form·tumban 
+\begin{DoxyParams}{Param√©terek}
+{\em os} & -\/ ostream objektum, amire rajzolunk \\
+\hline
+{\em shift} & -\/ eltol·s \\
+\hline
+{\em s} & -\/ nagyÌt·s \\
+\hline
+{\em color} & -\/ szÌn \\
+\hline
+\end{DoxyParams}
+
+
+Megval√≥s√≠tja a k√∂vetkez≈ëket\+: \hyperlink{classShape_a7fa591757885e51aa46e7ab7791cba33}{Shape}.
+
+\index{Triangle@{Triangle}!in\+Circle@{in\+Circle}}
+\index{in\+Circle@{in\+Circle}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{in\+Circle(\+Vector2 c, double r)}{inCircle(Vector2 c, double r)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Triangle\+::in\+Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{c, }
+\item[{double}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classTriangle_a221410c631df57f8cda0c63003ce55e0}{}\label{classTriangle_a221410c631df57f8cda0c63003ce55e0}
+H·romszˆg benne van-\/e egy kˆrben 
+\begin{DoxyParams}{Param√©terek}
+{\em c} & -\/ a kˆr kˆzÈppontja \\
+\hline
+{\em r} & -\/ a kˆr sugara \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+benne van-\/e a kˆrben 
+\end{DoxyReturn}
+
+
+Megval√≥s√≠tja a k√∂vetkez≈ëket\+: \hyperlink{classShape_a190b7f7ff79f86830958f2b942e036b0}{Shape}.
+
+\index{Triangle@{Triangle}!print@{print}}
+\index{print@{print}!Triangle@{Triangle}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&os) const }{print(std::ostream &os) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Triangle\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classTriangle_a488a0575e8b5064c938fd25349ca7b4a}{}\label{classTriangle_a488a0575e8b5064c938fd25349ca7b4a}
+H·romszˆg kiÌr·sa 
+\begin{DoxyParams}{Param√©terek}
+{\em os} & -\/ ostream objektum, amire kiÌrunk \\
+\hline
+\end{DoxyParams}
+
+
+Megval√≥s√≠tja a k√∂vetkez≈ëket\+: \hyperlink{classShape_a897ad0673de4afba36d5bf135a0cfdf9}{Shape}.
+
+
+
+Ez a dokument√°ci√≥ az oszt√°lyr√≥l a k√∂vetkez≈ë f√°jlok alapj√°n k√©sz√ºlt\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Triangle_8h}{Triangle.\+h}\item 
+Triangle.\+cpp\end{DoxyCompactItemize}

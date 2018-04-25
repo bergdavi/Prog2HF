@@ -118,5 +118,9 @@ int main()
 		EXPECT_EQ(Vector2(3,4), v) << "Nem jo a beolvasas/kiiras" << endl;		
 	} ENDM
     
+
+	
+	
+	
     return 0;
 }

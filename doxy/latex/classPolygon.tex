@@ -1,0 +1,115 @@
+\hypertarget{classPolygon}{}\section{Polygon oszt√°lyreferencia}
+\label{classPolygon}\index{Polygon@{Polygon}}
+
+
+{\ttfamily \#include $<$Polygon.\+h$>$}
+
+\subsection*{Publikus tagf√ºggv√©nyek}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Polygon} (\hyperlink{classVector2}{Vector2} \hyperlink{classShape_a9238c1a46e6e59affa8383648072646c}{center}, \hyperlink{classVector2}{Vector2} \hyperlink{classShape_a12836bd766b32cf6535907b13cf7d9b2}{point}, int sides)\hypertarget{classPolygon_a0a348c290aa8e1e893b5ac359341a0bf}{}\label{classPolygon_a0a348c290aa8e1e893b5ac359341a0bf}
+
+\item 
+bool \hyperlink{classPolygon_a4f7be226fdba49a747746f3e8ef49258}{in\+Circle} (\hyperlink{classVector2}{Vector2} c, double r)
+\item 
+bool \hyperlink{classPolygon_ad877a148f85eb33bd3280521f4936f33}{contains} (\hyperlink{classVector2}{Vector2} p)
+\item 
+void \hyperlink{classPolygon_ad88903302bd6d8fc441b3cee33df5586}{draw} (std\+::ostream \&os, int shift, int s, const char $\ast$color) const 
+\item 
+void \hyperlink{classPolygon_aa28b611e64fed7c4c31d8c79f70378ba}{print} (std\+::ostream \&os) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{R√©szletes le√≠r√°s}
+Sokszˆg oszt·ly Szab·lyos sokszˆget t·rol 
+
+\subsection{Tagf√ºggv√©nyek dokument√°ci√≥ja}
+\index{Polygon@{Polygon}!contains@{contains}}
+\index{contains@{contains}!Polygon@{Polygon}}
+\subsubsection[{\texorpdfstring{contains(\+Vector2 p)}{contains(Vector2 p)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Polygon\+::contains (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classPolygon_ad877a148f85eb33bd3280521f4936f33}{}\label{classPolygon_ad877a148f85eb33bd3280521f4936f33}
+Sokszˆg tartalmaz-\/e egy pontot 
+\begin{DoxyParams}{Param√©terek}
+{\em p} & -\/ a kÈrdÈses pont \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+tartalmazza-\/e a pontot 
+\end{DoxyReturn}
+
+
+Megval√≥s√≠tja a k√∂vetkez≈ëket\+: \hyperlink{classShape_a498dd2edd52ce57429f991b9890d46c2}{Shape}.
+
+\index{Polygon@{Polygon}!draw@{draw}}
+\index{draw@{draw}!Polygon@{Polygon}}
+\subsubsection[{\texorpdfstring{draw(std\+::ostream \&os, int shift, int s, const char $\ast$color) const }{draw(std::ostream &os, int shift, int s, const char *color) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Polygon\+::draw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{int}]{shift, }
+\item[{int}]{s, }
+\item[{const char $\ast$}]{color = {\ttfamily \char`\"{}black\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classPolygon_ad88903302bd6d8fc441b3cee33df5586}{}\label{classPolygon_ad88903302bd6d8fc441b3cee33df5586}
+Sokszˆg rajzol·sa S\+VG form·tumban 
+\begin{DoxyParams}{Param√©terek}
+{\em os} & -\/ ostream objektum, amire rajzolunk \\
+\hline
+{\em shift} & -\/ eltol·s \\
+\hline
+{\em s} & -\/ nagyÌt·s \\
+\hline
+{\em color} & -\/ szÌn \\
+\hline
+\end{DoxyParams}
+
+
+Megval√≥s√≠tja a k√∂vetkez≈ëket\+: \hyperlink{classShape_a7fa591757885e51aa46e7ab7791cba33}{Shape}.
+
+\index{Polygon@{Polygon}!in\+Circle@{in\+Circle}}
+\index{in\+Circle@{in\+Circle}!Polygon@{Polygon}}
+\subsubsection[{\texorpdfstring{in\+Circle(\+Vector2 c, double r)}{inCircle(Vector2 c, double r)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Polygon\+::in\+Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{c, }
+\item[{double}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classPolygon_a4f7be226fdba49a747746f3e8ef49258}{}\label{classPolygon_a4f7be226fdba49a747746f3e8ef49258}
+Szab·lyos sokszˆg benne van-\/e egy kˆrben 
+\begin{DoxyParams}{Param√©terek}
+{\em c} & -\/ a kˆr kˆzÈppontja \\
+\hline
+{\em r} & -\/ a kˆr sugara \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+benne van-\/e a kˆrben 
+\end{DoxyReturn}
+
+
+Megval√≥s√≠tja a k√∂vetkez≈ëket\+: \hyperlink{classShape_a190b7f7ff79f86830958f2b942e036b0}{Shape}.
+
+\index{Polygon@{Polygon}!print@{print}}
+\index{print@{print}!Polygon@{Polygon}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&os) const }{print(std::ostream &os) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Polygon\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classPolygon_aa28b611e64fed7c4c31d8c79f70378ba}{}\label{classPolygon_aa28b611e64fed7c4c31d8c79f70378ba}
+Sokszˆg kiÌr·sa 
+\begin{DoxyParams}{Param√©terek}
+{\em os} & -\/ ostream objektum, amire kiÌrunk \\
+\hline
+\end{DoxyParams}
+
+
+Megval√≥s√≠tja a k√∂vetkez≈ëket\+: \hyperlink{classShape_a897ad0673de4afba36d5bf135a0cfdf9}{Shape}.
+
+
+
+Ez a dokument√°ci√≥ az oszt√°lyr√≥l a k√∂vetkez≈ë f√°jlok alapj√°n k√©sz√ºlt\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Polygon_8h}{Polygon.\+h}\item 
+Polygon.\+cpp\end{DoxyCompactItemize}

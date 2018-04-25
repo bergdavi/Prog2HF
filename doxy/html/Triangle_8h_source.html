@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Síkidomok: Triangle.h Forrásfájl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Síkidomok
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Készítette Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Keresés');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Főoldal</span></a></li>
+      <li><a href="annotated.html"><span>Osztályok</span></a></li>
+      <li class="current"><a href="files.html"><span>Fájl</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Keresés" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Fájllista</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Triangle.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Triangle_8h.html">Ugrás a fájl dokumentációjához.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef TRIANGLE_H</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define TRIANGLE_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Shape_8h.html">Shape.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classTriangle.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTriangle.html">Triangle</a> : <span class="keyword">public</span> <a class="code" href="classShape.html">Shape</a></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">public</span>:</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <a class="code" href="classTriangle.html">Triangle</a>();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="classTriangle.html">Triangle</a>(<a class="code" href="classVector2.html">Vector2</a> <a class="code" href="classShape.html#a9238c1a46e6e59affa8383648072646c">center</a>, <a class="code" href="classVector2.html">Vector2</a> <a class="code" href="classShape.html#a12836bd766b32cf6535907b13cf7d9b2">point</a>);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <span class="keyword">virtual</span> ~<a class="code" href="classTriangle.html">Triangle</a>();</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classTriangle.html#a221410c631df57f8cda0c63003ce55e0">inCircle</a>(<a class="code" href="classVector2.html">Vector2</a> c, <span class="keywordtype">double</span> r);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classTriangle.html#a70a4da9eceb0324d8ed2d6c406956782">contains</a>(<a class="code" href="classVector2.html">Vector2</a> p);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classTriangle.html#acb2bda6dfb3dcd7f329b89067d2182e7">draw</a>(std::ostream&amp; os, <span class="keywordtype">int</span> shift, <span class="keywordtype">int</span> s, <span class="keyword">const</span> <span class="keywordtype">char</span>* color) <span class="keyword">const</span>;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classTriangle.html#a488a0575e8b5064c938fd25349ca7b4a">print</a>(std::ostream&amp; os) <span class="keyword">const</span>;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">protected</span>:</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">private</span>:</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // TRIANGLE_H</span></div><div class="ttc" id="classShape_html_a9238c1a46e6e59affa8383648072646c"><div class="ttname"><a href="classShape.html#a9238c1a46e6e59affa8383648072646c">Shape::center</a></div><div class="ttdeci">Vector2 center</div><div class="ttdoc">S�kidom k�z�ppontja. </div><div class="ttdef"><b>Definition:</b> Shape.h:20</div></div>
+<div class="ttc" id="classShape_html_a12836bd766b32cf6535907b13cf7d9b2"><div class="ttname"><a href="classShape.html#a12836bd766b32cf6535907b13cf7d9b2">Shape::point</a></div><div class="ttdeci">Vector2 point</div><div class="ttdoc">S�kidom egy cs�csa. </div><div class="ttdef"><b>Definition:</b> Shape.h:21</div></div>
+<div class="ttc" id="classTriangle_html_acb2bda6dfb3dcd7f329b89067d2182e7"><div class="ttname"><a href="classTriangle.html#acb2bda6dfb3dcd7f329b89067d2182e7">Triangle::draw</a></div><div class="ttdeci">void draw(std::ostream &amp;os, int shift, int s, const char *color) const </div><div class="ttdef"><b>Definition:</b> Triangle.cpp:52</div></div>
+<div class="ttc" id="classVector2_html"><div class="ttname"><a href="classVector2.html">Vector2</a></div><div class="ttdef"><b>Definition:</b> Vector2.h:13</div></div>
+<div class="ttc" id="classTriangle_html"><div class="ttname"><a href="classTriangle.html">Triangle</a></div><div class="ttdef"><b>Definition:</b> Triangle.h:14</div></div>
+<div class="ttc" id="classTriangle_html_a221410c631df57f8cda0c63003ce55e0"><div class="ttname"><a href="classTriangle.html#a221410c631df57f8cda0c63003ce55e0">Triangle::inCircle</a></div><div class="ttdeci">bool inCircle(Vector2 c, double r)</div><div class="ttdef"><b>Definition:</b> Triangle.cpp:18</div></div>
+<div class="ttc" id="classTriangle_html_a70a4da9eceb0324d8ed2d6c406956782"><div class="ttname"><a href="classTriangle.html#a70a4da9eceb0324d8ed2d6c406956782">Triangle::contains</a></div><div class="ttdeci">bool contains(Vector2 p)</div><div class="ttdef"><b>Definition:</b> Triangle.cpp:38</div></div>
+<div class="ttc" id="Shape_8h_html"><div class="ttname"><a href="Shape_8h.html">Shape.h</a></div></div>
+<div class="ttc" id="classTriangle_html_a488a0575e8b5064c938fd25349ca7b4a"><div class="ttname"><a href="classTriangle.html#a488a0575e8b5064c938fd25349ca7b4a">Triangle::print</a></div><div class="ttdeci">void print(std::ostream &amp;os) const </div><div class="ttdef"><b>Definition:</b> Triangle.cpp:64</div></div>
+<div class="ttc" id="classShape_html"><div class="ttname"><a href="classShape.html">Shape</a></div><div class="ttdef"><b>Definition:</b> Shape.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Készítette &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

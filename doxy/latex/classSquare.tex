@@ -1,0 +1,115 @@
+\hypertarget{classSquare}{}\section{Square osztályreferencia}
+\label{classSquare}\index{Square@{Square}}
+
+
+{\ttfamily \#include $<$Square.\+h$>$}
+
+\subsection*{Publikus tagfüggvények}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Square} (\hyperlink{classVector2}{Vector2} \hyperlink{classShape_a9238c1a46e6e59affa8383648072646c}{center}, \hyperlink{classVector2}{Vector2} \hyperlink{classShape_a12836bd766b32cf6535907b13cf7d9b2}{point})\hypertarget{classSquare_a647f79937e00a31b8b12a7771cb84737}{}\label{classSquare_a647f79937e00a31b8b12a7771cb84737}
+
+\item 
+bool \hyperlink{classSquare_a1908bee2dada9d6c2e4b2d09dde4bcb6}{in\+Circle} (\hyperlink{classVector2}{Vector2} c, double r)
+\item 
+bool \hyperlink{classSquare_adea568ce4da343ef99aead1dcc04342f}{contains} (\hyperlink{classVector2}{Vector2} p)
+\item 
+void \hyperlink{classSquare_a2bffb6553fb9ab45c3826fcca00fc254}{draw} (std\+::ostream \&os, int shift, int s, const char $\ast$color) const 
+\item 
+void \hyperlink{classSquare_abb1e6d3a465f0e10f6d3babf7291df5e}{print} (std\+::ostream \&os) const 
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Részletes leírás}
+\hyperlink{classSquare}{Square} oszt�ly N�gyzetet t�rol 
+
+\subsection{Tagfüggvények dokumentációja}
+\index{Square@{Square}!contains@{contains}}
+\index{contains@{contains}!Square@{Square}}
+\subsubsection[{\texorpdfstring{contains(\+Vector2 p)}{contains(Vector2 p)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Square\+::contains (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classSquare_adea568ce4da343ef99aead1dcc04342f}{}\label{classSquare_adea568ce4da343ef99aead1dcc04342f}
+N�gyzet tartalmaz-\/e egy pontot 
+\begin{DoxyParams}{Paraméterek}
+{\em p} & -\/ a k�rd�ses pont \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+tartalmazza-\/e a pontot 
+\end{DoxyReturn}
+
+
+Megvalósítja a következőket\+: \hyperlink{classShape_a498dd2edd52ce57429f991b9890d46c2}{Shape}.
+
+\index{Square@{Square}!draw@{draw}}
+\index{draw@{draw}!Square@{Square}}
+\subsubsection[{\texorpdfstring{draw(std\+::ostream \&os, int shift, int s, const char $\ast$color) const }{draw(std::ostream &os, int shift, int s, const char *color) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Square\+::draw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{int}]{shift, }
+\item[{int}]{s, }
+\item[{const char $\ast$}]{color = {\ttfamily \char`\"{}black\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classSquare_a2bffb6553fb9ab45c3826fcca00fc254}{}\label{classSquare_a2bffb6553fb9ab45c3826fcca00fc254}
+N�gyzet rajzol�sa S\+VG form�tumban 
+\begin{DoxyParams}{Paraméterek}
+{\em os} & -\/ ostream objektum, amire rajzolunk \\
+\hline
+{\em shift} & -\/ eltol�s \\
+\hline
+{\em s} & -\/ nagy�t�s \\
+\hline
+{\em color} & -\/ sz�n \\
+\hline
+\end{DoxyParams}
+
+
+Megvalósítja a következőket\+: \hyperlink{classShape_a7fa591757885e51aa46e7ab7791cba33}{Shape}.
+
+\index{Square@{Square}!in\+Circle@{in\+Circle}}
+\index{in\+Circle@{in\+Circle}!Square@{Square}}
+\subsubsection[{\texorpdfstring{in\+Circle(\+Vector2 c, double r)}{inCircle(Vector2 c, double r)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Square\+::in\+Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{c, }
+\item[{double}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classSquare_a1908bee2dada9d6c2e4b2d09dde4bcb6}{}\label{classSquare_a1908bee2dada9d6c2e4b2d09dde4bcb6}
+N�gyzet benne van-\/e egy k�rben 
+\begin{DoxyParams}{Paraméterek}
+{\em c} & -\/ a k�r k�z�ppontja \\
+\hline
+{\em r} & -\/ a k�r sugara \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszatérési érték}
+benne van-\/e a k�rben 
+\end{DoxyReturn}
+
+
+Megvalósítja a következőket\+: \hyperlink{classShape_a190b7f7ff79f86830958f2b942e036b0}{Shape}.
+
+\index{Square@{Square}!print@{print}}
+\index{print@{print}!Square@{Square}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&os) const }{print(std::ostream &os) const }}]{\setlength{\rightskip}{0pt plus 5cm}void Square\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classSquare_abb1e6d3a465f0e10f6d3babf7291df5e}{}\label{classSquare_abb1e6d3a465f0e10f6d3babf7291df5e}
+N�gyzet ki�r�sa 
+\begin{DoxyParams}{Paraméterek}
+{\em os} & -\/ ostream objektum, amire ki�runk \\
+\hline
+\end{DoxyParams}
+
+
+Megvalósítja a következőket\+: \hyperlink{classShape_a897ad0673de4afba36d5bf135a0cfdf9}{Shape}.
+
+
+
+Ez a dokumentáció az osztályról a következő fájlok alapján készült\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Square_8h}{Square.\+h}\item 
+Square.\+cpp\end{DoxyCompactItemize}

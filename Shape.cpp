@@ -23,22 +23,28 @@ ShapeList::ShapeList(Shape *s):length(1) {
 
 ShapeList::~ShapeList() {
     ShapeNode* temp = firstNode;
-    for(ShapeNode* p = firstNode->next; p != NULL; p=p->next) {
+    if(firstNode != NULL) {
+        for(ShapeNode* p = firstNode->next; p != NULL; p=p->next) {
+            delete temp;
+            temp = p;
+        }
         delete temp;
-        temp = p;
     }
-    delete temp;
 }
 
 Shape* ShapeList::first() {
     nodeIter = firstNode;
-    iter = nodeIter->data;
+    if(nodeIter != NULL) {
+        iter = nodeIter->data;
+    }
     return iter;
 }
 
 Shape* ShapeList::last() {
     nodeIter = lastNode;
-    iter = nodeIter->data;
+    if(nodeIter != NULL) {
+        iter = nodeIter->data;
+    }
     return iter;
 }
 
@@ -47,7 +53,9 @@ Shape* ShapeList::next() {
         return NULL;
     }
     nodeIter = nodeIter->next;
-    iter = nodeIter->data;
+    if(nodeIter != NULL) {
+        iter = nodeIter->data;
+    }
     return iter;
 }
 
@@ -56,7 +64,9 @@ Shape* ShapeList::prev() {
         return NULL;
     }
     nodeIter = nodeIter->prev;
-    iter = nodeIter->data;
+    if(nodeIter != NULL) {
+        iter = nodeIter->data;
+    }
     return iter;
 }
 
@@ -68,7 +78,9 @@ Shape* ShapeList::get(size_t idx) {
     for(size_t i = 0; i < idx; i++ ) {
         nodeIter = nodeIter->next;
     }
-    iter = nodeIter->data;
+    if(nodeIter != NULL) {
+        iter = nodeIter->data;
+    }
     return iter;
 }
 

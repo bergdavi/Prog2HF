@@ -1,0 +1,124 @@
+\hypertarget{classShapeList}{}\section{Shape\+List osztÃ¡lyreferencia}
+\label{classShapeList}\index{Shape\+List@{Shape\+List}}
+
+
+{\ttfamily \#include $<$Shape.\+h$>$}
+
+\subsection*{Publikus tagfÃ¼ggvÃ©nyek}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Shape\+List} (\hyperlink{classShape}{Shape} $\ast$s)\hypertarget{classShapeList_a6ebc4954a70b8030551d0f7550aaf1d3}{}\label{classShapeList_a6ebc4954a70b8030551d0f7550aaf1d3}
+
+\item 
+\hyperlink{classShape}{Shape} $\ast$ \hyperlink{classShapeList_a01bde16c5cbf6b69869c1c9c459a7318}{first} ()
+\item 
+\hyperlink{classShape}{Shape} $\ast$ \hyperlink{classShapeList_aa833f3ddf57d87ba1fe6c03be842f866}{last} ()
+\item 
+\hyperlink{classShape}{Shape} $\ast$ \hyperlink{classShapeList_abd32d080b4fe4bea5ff18a0696c9d64d}{next} ()
+\item 
+\hyperlink{classShape}{Shape} $\ast$ \hyperlink{classShapeList_a3b44e9790175d6e1d9802813a24cc885}{prev} ()
+\item 
+\hyperlink{classShape}{Shape} $\ast$ \hyperlink{classShapeList_a65c2097874c09fc2dbb336bc6bd6ab75}{get} (size\+\_\+t idx)
+\item 
+void \hyperlink{classShapeList_aadfe0de4bcd65fec7cca89b4a8beb677}{add} (\hyperlink{classShape}{Shape} $\ast$s)
+\item 
+int \hyperlink{classShapeList_afa3446e4d859d8628748aab91beab4e2}{get\+Length} ()
+\end{DoxyCompactItemize}
+\subsection*{Publikus attribÃºtumok}
+\begin{DoxyCompactItemize}
+\item 
+Shape\+Node $\ast$ \hyperlink{classShapeList_a3a362c2a3a0fa3eea5ece0495ca2d95e}{node\+Iter}\hypertarget{classShapeList_a3a362c2a3a0fa3eea5ece0495ca2d95e}{}\label{classShapeList_a3a362c2a3a0fa3eea5ece0495ca2d95e}
+
+\begin{DoxyCompactList}\small\item\em Lista elemére mutató iterátor. \end{DoxyCompactList}\item 
+\hyperlink{classShape}{Shape} $\ast$ \hyperlink{classShapeList_a8658db885885ccf71ba0d8f2a6285e0c}{iter}\hypertarget{classShapeList_a8658db885885ccf71ba0d8f2a6285e0c}{}\label{classShapeList_a8658db885885ccf71ba0d8f2a6285e0c}
+
+\begin{DoxyCompactList}\small\item\em Lista adattagjára mutató iterátor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{RÃ©szletes leÃ­rÃ¡s}
+\hyperlink{classShapeList}{Shape\+List} osztály Duplán láncolt lista, amiben síkidomokat lehet tárolni 
+
+\subsection{TagfÃ¼ggvÃ©nyek dokumentÃ¡ciÃ³ja}
+\index{Shape\+List@{Shape\+List}!add@{add}}
+\index{add@{add}!Shape\+List@{Shape\+List}}
+\subsubsection[{\texorpdfstring{add(\+Shape $\ast$s)}{add(Shape *s)}}]{\setlength{\rightskip}{0pt plus 5cm}void Shape\+List\+::add (
+\begin{DoxyParamCaption}
+\item[{{\bf Shape} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{classShapeList_aadfe0de4bcd65fec7cca89b4a8beb677}{}\label{classShapeList_aadfe0de4bcd65fec7cca89b4a8beb677}
+Új elem hozzáadása a listához 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em s} & -\/ hozzáadandó elem \\
+\hline
+\end{DoxyParams}
+\index{Shape\+List@{Shape\+List}!first@{first}}
+\index{first@{first}!Shape\+List@{Shape\+List}}
+\subsubsection[{\texorpdfstring{first()}{first()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape} $\ast$ Shape\+List\+::first (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShapeList_a01bde16c5cbf6b69869c1c9c459a7318}{}\label{classShapeList_a01bde16c5cbf6b69869c1c9c459a7318}
+Iterátor mozgatása az elsö elemre \begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+mutató a lista elsö elemére 
+\end{DoxyReturn}
+\index{Shape\+List@{Shape\+List}!get@{get}}
+\index{get@{get}!Shape\+List@{Shape\+List}}
+\subsubsection[{\texorpdfstring{get(size\+\_\+t idx)}{get(size_t idx)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape} $\ast$ Shape\+List\+::get (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{idx}
+\end{DoxyParamCaption}
+)}\hypertarget{classShapeList_a65c2097874c09fc2dbb336bc6bd6ab75}{}\label{classShapeList_a65c2097874c09fc2dbb336bc6bd6ab75}
+A lista tetszöleges indexü elemének lekérése 
+\begin{DoxyParams}{ParamÃ©terek}
+{\em idx} & -\/ az elem indexe \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+mutató a lista megfelelö elemére 
+\end{DoxyReturn}
+\index{Shape\+List@{Shape\+List}!get\+Length@{get\+Length}}
+\index{get\+Length@{get\+Length}!Shape\+List@{Shape\+List}}
+\subsubsection[{\texorpdfstring{get\+Length()}{getLength()}}]{\setlength{\rightskip}{0pt plus 5cm}int Shape\+List\+::get\+Length (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShapeList_afa3446e4d859d8628748aab91beab4e2}{}\label{classShapeList_afa3446e4d859d8628748aab91beab4e2}
+Length getter \begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+a lista hossza 
+\end{DoxyReturn}
+\index{Shape\+List@{Shape\+List}!last@{last}}
+\index{last@{last}!Shape\+List@{Shape\+List}}
+\subsubsection[{\texorpdfstring{last()}{last()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape} $\ast$ Shape\+List\+::last (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShapeList_aa833f3ddf57d87ba1fe6c03be842f866}{}\label{classShapeList_aa833f3ddf57d87ba1fe6c03be842f866}
+Iterátor mozgatása az utolsó elemre \begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+mutató a lista utolsó elemére 
+\end{DoxyReturn}
+\index{Shape\+List@{Shape\+List}!next@{next}}
+\index{next@{next}!Shape\+List@{Shape\+List}}
+\subsubsection[{\texorpdfstring{next()}{next()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape} $\ast$ Shape\+List\+::next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShapeList_abd32d080b4fe4bea5ff18a0696c9d64d}{}\label{classShapeList_abd32d080b4fe4bea5ff18a0696c9d64d}
+Iterátor mozgatása a következö elemre \begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+mutató a lista következö elemére 
+\end{DoxyReturn}
+\index{Shape\+List@{Shape\+List}!prev@{prev}}
+\index{prev@{prev}!Shape\+List@{Shape\+List}}
+\subsubsection[{\texorpdfstring{prev()}{prev()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shape} $\ast$ Shape\+List\+::prev (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShapeList_a3b44e9790175d6e1d9802813a24cc885}{}\label{classShapeList_a3b44e9790175d6e1d9802813a24cc885}
+Iterátor mozgatása az elözö elemre \begin{DoxyReturn}{VisszatÃ©rÃ©si Ã©rtÃ©k}
+mutató a lista elözö elemére 
+\end{DoxyReturn}
+
+
+Ez a dokumentÃ¡ciÃ³ az osztÃ¡lyrÃ³l a kÃ¶vetkezÅ‘ fÃ¡jlok alapjÃ¡n kÃ©szÃ¼lt\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Shape_8h}{Shape.\+h}\item 
+Shape.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>SÃ­kidomok: Shape.h ForrÃ¡sfÃ¡jl</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">SÃ­kidomok
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- KÃ©szÃ­tette Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'KeresÃ©s');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>FÅ‘oldal</span></a></li>
+      <li><a href="annotated.html"><span>OsztÃ¡lyok</span></a></li>
+      <li class="current"><a href="files.html"><span>FÃ¡jl</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="KeresÃ©s" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>FÃ¡jllista</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Shape.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="Shape_8h.html">UgrÃ¡s a fÃ¡jl dokumentÃ¡ciÃ³jÃ¡hoz.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef SHAPE_H</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define SHAPE_H</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;math.h&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Vector2_8h.html">Vector2.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classShape.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classShape.html">Shape</a> {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  <span class="keyword">protected</span>:</div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classShape.html#a9238c1a46e6e59affa8383648072646c">   20</a></span>&#160;    <a class="code" href="classVector2.html">Vector2</a> <a class="code" href="classShape.html#a9238c1a46e6e59affa8383648072646c">center</a>;         </div><div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classShape.html#a12836bd766b32cf6535907b13cf7d9b2">   21</a></span>&#160;    <a class="code" href="classVector2.html">Vector2</a> <a class="code" href="classShape.html#a12836bd766b32cf6535907b13cf7d9b2">point</a>;          </div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classShape.html#aa39f9637290e04bd52a2610a34042361">   22</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classShape.html#aa39f9637290e04bd52a2610a34042361">area</a>;            </div><div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classShape.html#a7aaab7e386abff707d5bf6f8b2be2d35">   23</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classShape.html#a7aaab7e386abff707d5bf6f8b2be2d35">circumference</a>;   </div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classShape.html">Shape</a>();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classShape.html">Shape</a>(<a class="code" href="classVector2.html">Vector2</a> c, <a class="code" href="classVector2.html">Vector2</a> point);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classShape.html">Shape</a>();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classShape.html#a24c101a3184c78884e8bf28a90d410c8">getArea</a>();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classShape.html#ad49c6d811c3944b66f1e16e246f8d31d">getCircumference</a>();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classShape.html#a190b7f7ff79f86830958f2b942e036b0">inCircle</a>(<a class="code" href="classVector2.html">Vector2</a> center, <span class="keywordtype">double</span> r) = 0;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classShape.html#a498dd2edd52ce57429f991b9890d46c2">contains</a>(<a class="code" href="classVector2.html">Vector2</a> p) = 0;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classShape.html#a897ad0673de4afba36d5bf135a0cfdf9">print</a>(std::ostream&amp; os) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classShape.html#a7fa591757885e51aa46e7ab7791cba33">draw</a>(std::ostream&amp; os, <span class="keywordtype">int</span> shift, <span class="keywordtype">int</span> s, <span class="keyword">const</span> <span class="keywordtype">char</span>* color = <span class="stringliteral">&quot;black&quot;</span>) <span class="keyword">const</span> = 0;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; <a class="code" href="classShape.html#a5e5a3a2c6c0f680da1136c652c52d3a9">operator&lt;&lt; </a>(std::ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classShape.html">Shape</a>&amp; s);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">friend</span> std::istream&amp; <a class="code" href="classShape.html#ae8962e5f1d7ad014e8ce115de0b3dfdc">operator&gt;&gt; </a>(std::istream&amp; is, <a class="code" href="classShape.html">Shape</a>*&amp; s);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classShapeList.html">   78</a></span>&#160;<span class="keyword">class </span><a class="code" href="classShapeList.html">ShapeList</a> {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">struct </span>ShapeNode {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <a class="code" href="classShape.html">Shape</a>* data;        </div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        ShapeNode* next;    </div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        ShapeNode* prev;    </div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        ShapeNode(<a class="code" href="classShape.html">Shape</a>* data, ShapeNode* next, ShapeNode* prev);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        ~ShapeNode();</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    };</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">size_t</span> length;          </div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    ShapeNode* firstNode;   </div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    ShapeNode* lastNode;    </div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keyword">public</span>:</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classShapeList.html">ShapeList</a>();</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classShapeList.html">ShapeList</a>(<a class="code" href="classShape.html">Shape</a>* s);</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    ~<a class="code" href="classShapeList.html">ShapeList</a>();</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classShapeList.html#a3a362c2a3a0fa3eea5ece0495ca2d95e">   99</a></span>&#160;    ShapeNode* <a class="code" href="classShapeList.html#a3a362c2a3a0fa3eea5ece0495ca2d95e">nodeIter</a>;    </div><div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classShapeList.html#a8658db885885ccf71ba0d8f2a6285e0c">  100</a></span>&#160;    <a class="code" href="classShape.html">Shape</a>* <a class="code" href="classShapeList.html#a8658db885885ccf71ba0d8f2a6285e0c">iter</a>;            </div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="classShape.html">Shape</a>* first();</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="classShape.html">Shape</a>* last();</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="classShape.html">Shape</a>* next();</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <a class="code" href="classShape.html">Shape</a>* prev();</div><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="classShape.html">Shape</a>* <span class="keyword">get</span>(<span class="keywordtype">size_t</span> idx);</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> add(<a class="code" href="classShape.html">Shape</a>* s);</div><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">int</span> getLength();</div><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;</div><div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div><div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div><div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div><div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div><div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif // SHAPE_H</span></div><div class="ttc" id="classShape_html_aa39f9637290e04bd52a2610a34042361"><div class="ttname"><a href="classShape.html#aa39f9637290e04bd52a2610a34042361">Shape::area</a></div><div class="ttdeci">double area</div><div class="ttdoc">Síkidom területe. </div><div class="ttdef"><b>Definition:</b> Shape.h:22</div></div>
+<div class="ttc" id="classShape_html_a7fa591757885e51aa46e7ab7791cba33"><div class="ttname"><a href="classShape.html#a7fa591757885e51aa46e7ab7791cba33">Shape::draw</a></div><div class="ttdeci">virtual void draw(std::ostream &amp;os, int shift, int s, const char *color=&quot;black&quot;) const =0</div></div>
+<div class="ttc" id="classShape_html_a9238c1a46e6e59affa8383648072646c"><div class="ttname"><a href="classShape.html#a9238c1a46e6e59affa8383648072646c">Shape::center</a></div><div class="ttdeci">Vector2 center</div><div class="ttdoc">Síkidom középpontja. </div><div class="ttdef"><b>Definition:</b> Shape.h:20</div></div>
+<div class="ttc" id="classShape_html_a5e5a3a2c6c0f680da1136c652c52d3a9"><div class="ttname"><a href="classShape.html#a5e5a3a2c6c0f680da1136c652c52d3a9">Shape::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;os, const Shape &amp;s)</div><div class="ttdef"><b>Definition:</b> Shape.cpp:108</div></div>
+<div class="ttc" id="classShape_html_a12836bd766b32cf6535907b13cf7d9b2"><div class="ttname"><a href="classShape.html#a12836bd766b32cf6535907b13cf7d9b2">Shape::point</a></div><div class="ttdeci">Vector2 point</div><div class="ttdoc">Síkidom egy csúcsa. </div><div class="ttdef"><b>Definition:</b> Shape.h:21</div></div>
+<div class="ttc" id="classShape_html_ad49c6d811c3944b66f1e16e246f8d31d"><div class="ttname"><a href="classShape.html#ad49c6d811c3944b66f1e16e246f8d31d">Shape::getCircumference</a></div><div class="ttdeci">double getCircumference()</div><div class="ttdef"><b>Definition:</b> Shape.cpp:104</div></div>
+<div class="ttc" id="classShape_html_a24c101a3184c78884e8bf28a90d410c8"><div class="ttname"><a href="classShape.html#a24c101a3184c78884e8bf28a90d410c8">Shape::getArea</a></div><div class="ttdeci">double getArea()</div><div class="ttdef"><b>Definition:</b> Shape.cpp:100</div></div>
+<div class="ttc" id="classShapeList_html"><div class="ttname"><a href="classShapeList.html">ShapeList</a></div><div class="ttdef"><b>Definition:</b> Shape.h:78</div></div>
+<div class="ttc" id="classVector2_html"><div class="ttname"><a href="classVector2.html">Vector2</a></div><div class="ttdef"><b>Definition:</b> Vector2.h:13</div></div>
+<div class="ttc" id="classShape_html_ae8962e5f1d7ad014e8ce115de0b3dfdc"><div class="ttname"><a href="classShape.html#ae8962e5f1d7ad014e8ce115de0b3dfdc">Shape::operator&gt;&gt;</a></div><div class="ttdeci">friend std::istream &amp; operator&gt;&gt;(std::istream &amp;is, Shape *&amp;s)</div><div class="ttdef"><b>Definition:</b> Shape.cpp:113</div></div>
+<div class="ttc" id="classShape_html_a897ad0673de4afba36d5bf135a0cfdf9"><div class="ttname"><a href="classShape.html#a897ad0673de4afba36d5bf135a0cfdf9">Shape::print</a></div><div class="ttdeci">virtual void print(std::ostream &amp;os) const =0</div></div>
+<div class="ttc" id="Vector2_8h_html"><div class="ttname"><a href="Vector2_8h.html">Vector2.h</a></div></div>
+<div class="ttc" id="classShape_html_a190b7f7ff79f86830958f2b942e036b0"><div class="ttname"><a href="classShape.html#a190b7f7ff79f86830958f2b942e036b0">Shape::inCircle</a></div><div class="ttdeci">virtual bool inCircle(Vector2 center, double r)=0</div></div>
+<div class="ttc" id="classShapeList_html_a3a362c2a3a0fa3eea5ece0495ca2d95e"><div class="ttname"><a href="classShapeList.html#a3a362c2a3a0fa3eea5ece0495ca2d95e">ShapeList::nodeIter</a></div><div class="ttdeci">ShapeNode * nodeIter</div><div class="ttdoc">Lista elemére mutató iterátor. </div><div class="ttdef"><b>Definition:</b> Shape.h:99</div></div>
+<div class="ttc" id="classShape_html_a498dd2edd52ce57429f991b9890d46c2"><div class="ttname"><a href="classShape.html#a498dd2edd52ce57429f991b9890d46c2">Shape::contains</a></div><div class="ttdeci">virtual bool contains(Vector2 p)=0</div></div>
+<div class="ttc" id="classShape_html_a7aaab7e386abff707d5bf6f8b2be2d35"><div class="ttname"><a href="classShape.html#a7aaab7e386abff707d5bf6f8b2be2d35">Shape::circumference</a></div><div class="ttdeci">double circumference</div><div class="ttdoc">Síkidom kerülete. </div><div class="ttdef"><b>Definition:</b> Shape.h:23</div></div>
+<div class="ttc" id="classShapeList_html_a8658db885885ccf71ba0d8f2a6285e0c"><div class="ttname"><a href="classShapeList.html#a8658db885885ccf71ba0d8f2a6285e0c">ShapeList::iter</a></div><div class="ttdeci">Shape * iter</div><div class="ttdoc">Lista adattagjára mutató iterátor. </div><div class="ttdef"><b>Definition:</b> Shape.h:100</div></div>
+<div class="ttc" id="classShape_html"><div class="ttname"><a href="classShape.html">Shape</a></div><div class="ttdef"><b>Definition:</b> Shape.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+KÃ©szÃ­tette &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

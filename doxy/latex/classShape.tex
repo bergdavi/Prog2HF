@@ -1,0 +1,197 @@
+\hypertarget{classShape}{}\section{Shape oszt√°lyreferencia}
+\label{classShape}\index{Shape@{Shape}}
+
+
+{\ttfamily \#include $<$Shape.\+h$>$}
+
+\subsection*{Publikus tagf√ºggv√©nyek}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Shape} (\hyperlink{classVector2}{Vector2} c, \hyperlink{classVector2}{Vector2} \hyperlink{classShape_a12836bd766b32cf6535907b13cf7d9b2}{point})\hypertarget{classShape_a6833ae0a69bd1ecdc04b6c7e082be985}{}\label{classShape_a6833ae0a69bd1ecdc04b6c7e082be985}
+
+\item 
+double \hyperlink{classShape_a24c101a3184c78884e8bf28a90d410c8}{get\+Area} ()
+\item 
+double \hyperlink{classShape_ad49c6d811c3944b66f1e16e246f8d31d}{get\+Circumference} ()
+\item 
+virtual bool \hyperlink{classShape_a190b7f7ff79f86830958f2b942e036b0}{in\+Circle} (\hyperlink{classVector2}{Vector2} \hyperlink{classShape_a9238c1a46e6e59affa8383648072646c}{center}, double r)=0
+\item 
+virtual bool \hyperlink{classShape_a498dd2edd52ce57429f991b9890d46c2}{contains} (\hyperlink{classVector2}{Vector2} p)=0
+\item 
+virtual void \hyperlink{classShape_a897ad0673de4afba36d5bf135a0cfdf9}{print} (std\+::ostream \&os) const =0
+\item 
+virtual void \hyperlink{classShape_a7fa591757885e51aa46e7ab7791cba33}{draw} (std\+::ostream \&os, int shift, int s, const char $\ast$color=\char`\"{}black\char`\"{}) const =0
+\end{DoxyCompactItemize}
+\subsection*{V√©dett attrib√∫tumok}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVector2}{Vector2} \hyperlink{classShape_a9238c1a46e6e59affa8383648072646c}{center}\hypertarget{classShape_a9238c1a46e6e59affa8383648072646c}{}\label{classShape_a9238c1a46e6e59affa8383648072646c}
+
+\begin{DoxyCompactList}\small\item\em SÌkidom kˆzÈppontja. \end{DoxyCompactList}\item 
+\hyperlink{classVector2}{Vector2} \hyperlink{classShape_a12836bd766b32cf6535907b13cf7d9b2}{point}\hypertarget{classShape_a12836bd766b32cf6535907b13cf7d9b2}{}\label{classShape_a12836bd766b32cf6535907b13cf7d9b2}
+
+\begin{DoxyCompactList}\small\item\em SÌkidom egy cs˙csa. \end{DoxyCompactList}\item 
+double \hyperlink{classShape_aa39f9637290e04bd52a2610a34042361}{area}\hypertarget{classShape_aa39f9637290e04bd52a2610a34042361}{}\label{classShape_aa39f9637290e04bd52a2610a34042361}
+
+\begin{DoxyCompactList}\small\item\em SÌkidom ter¸lete. \end{DoxyCompactList}\item 
+double \hyperlink{classShape_a7aaab7e386abff707d5bf6f8b2be2d35}{circumference}\hypertarget{classShape_a7aaab7e386abff707d5bf6f8b2be2d35}{}\label{classShape_a7aaab7e386abff707d5bf6f8b2be2d35}
+
+\begin{DoxyCompactList}\small\item\em SÌkidom ker¸lete. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Bar√°tok}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{classShape_a5e5a3a2c6c0f680da1136c652c52d3a9}{operator$<$$<$} (std\+::ostream \&os, const \hyperlink{classShape}{Shape} \&s)
+\item 
+std\+::istream \& \hyperlink{classShape_ae8962e5f1d7ad014e8ce115de0b3dfdc}{operator$>$$>$} (std\+::istream \&is, \hyperlink{classShape}{Shape} $\ast$\&s)
+\end{DoxyCompactItemize}
+
+
+\subsection{R√©szletes le√≠r√°s}
+\hyperlink{classShape}{Shape} oszt·ly Szab·lyos sÌkidomot t·rol 
+
+\subsection{Tagf√ºggv√©nyek dokument√°ci√≥ja}
+\index{Shape@{Shape}!contains@{contains}}
+\index{contains@{contains}!Shape@{Shape}}
+\subsubsection[{\texorpdfstring{contains(\+Vector2 p)=0}{contains(Vector2 p)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Shape\+::contains (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classShape_a498dd2edd52ce57429f991b9890d46c2}{}\label{classShape_a498dd2edd52ce57429f991b9890d46c2}
+SÌkidom tartalmaz-\/e egy pontot 
+\begin{DoxyParams}{Param√©terek}
+{\em p} & -\/ a kÈrdÈses pont \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+tartalmazza-\/e a pontot 
+\end{DoxyReturn}
+
+
+Megval√≥s√≠tj√°k a k√∂vetkez≈ëk\+: \hyperlink{classTriangle_a70a4da9eceb0324d8ed2d6c406956782}{Triangle}, \hyperlink{classCircle_aa7b38255affe8506d83a4c1e7e5cc421}{Circle}, \hyperlink{classSquare_adea568ce4da343ef99aead1dcc04342f}{Square} √©s \hyperlink{classPolygon_ad877a148f85eb33bd3280521f4936f33}{Polygon}.
+
+\index{Shape@{Shape}!draw@{draw}}
+\index{draw@{draw}!Shape@{Shape}}
+\subsubsection[{\texorpdfstring{draw(std\+::ostream \&os, int shift, int s, const char $\ast$color=""black"") const =0}{draw(std::ostream &os, int shift, int s, const char *color="black") const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Shape\+::draw (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{int}]{shift, }
+\item[{int}]{s, }
+\item[{const char $\ast$}]{color = {\ttfamily \char`\"{}black\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classShape_a7fa591757885e51aa46e7ab7791cba33}{}\label{classShape_a7fa591757885e51aa46e7ab7791cba33}
+SÌkidom rajzol·sa S\+VG form·tumban 
+\begin{DoxyParams}{Param√©terek}
+{\em os} & -\/ ostream objektum, amire rajzolunk \\
+\hline
+{\em shift} & -\/ eltol·s \\
+\hline
+{\em s} & -\/ nagyÌt·s \\
+\hline
+{\em color} & -\/ szÌn \\
+\hline
+\end{DoxyParams}
+
+
+Megval√≥s√≠tj√°k a k√∂vetkez≈ëk\+: \hyperlink{classTriangle_acb2bda6dfb3dcd7f329b89067d2182e7}{Triangle}, \hyperlink{classCircle_a6bf94f502839055e8bdff55f24642140}{Circle}, \hyperlink{classSquare_a2bffb6553fb9ab45c3826fcca00fc254}{Square} √©s \hyperlink{classPolygon_ad88903302bd6d8fc441b3cee33df5586}{Polygon}.
+
+\index{Shape@{Shape}!get\+Area@{get\+Area}}
+\index{get\+Area@{get\+Area}!Shape@{Shape}}
+\subsubsection[{\texorpdfstring{get\+Area()}{getArea()}}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\+::get\+Area (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShape_a24c101a3184c78884e8bf28a90d410c8}{}\label{classShape_a24c101a3184c78884e8bf28a90d410c8}
+Area getter \begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+a sÌkidom ter¸lete 
+\end{DoxyReturn}
+\index{Shape@{Shape}!get\+Circumference@{get\+Circumference}}
+\index{get\+Circumference@{get\+Circumference}!Shape@{Shape}}
+\subsubsection[{\texorpdfstring{get\+Circumference()}{getCircumference()}}]{\setlength{\rightskip}{0pt plus 5cm}double Shape\+::get\+Circumference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classShape_ad49c6d811c3944b66f1e16e246f8d31d}{}\label{classShape_ad49c6d811c3944b66f1e16e246f8d31d}
+Circumference getter \begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+a skÌidom ker¸lete 
+\end{DoxyReturn}
+\index{Shape@{Shape}!in\+Circle@{in\+Circle}}
+\index{in\+Circle@{in\+Circle}!Shape@{Shape}}
+\subsubsection[{\texorpdfstring{in\+Circle(\+Vector2 center, double r)=0}{inCircle(Vector2 center, double r)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Shape\+::in\+Circle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector2}}]{center, }
+\item[{double}]{r}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classShape_a190b7f7ff79f86830958f2b942e036b0}{}\label{classShape_a190b7f7ff79f86830958f2b942e036b0}
+SÌkidom benne van-\/e egy kˆrben 
+\begin{DoxyParams}{Param√©terek}
+{\em c} & -\/ a kˆr kˆzÈppontja \\
+\hline
+{\em r} & -\/ a kˆr sugara \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Visszat√©r√©si √©rt√©k}
+benne van-\/e a kˆrben 
+\end{DoxyReturn}
+
+
+Megval√≥s√≠tj√°k a k√∂vetkez≈ëk\+: \hyperlink{classTriangle_a221410c631df57f8cda0c63003ce55e0}{Triangle}, \hyperlink{classCircle_a5311ead50d02975fe62c8bc3a8d5aa7b}{Circle}, \hyperlink{classSquare_a1908bee2dada9d6c2e4b2d09dde4bcb6}{Square} √©s \hyperlink{classPolygon_a4f7be226fdba49a747746f3e8ef49258}{Polygon}.
+
+\index{Shape@{Shape}!print@{print}}
+\index{print@{print}!Shape@{Shape}}
+\subsubsection[{\texorpdfstring{print(std\+::ostream \&os) const =0}{print(std::ostream &os) const =0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Shape\+::print (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{classShape_a897ad0673de4afba36d5bf135a0cfdf9}{}\label{classShape_a897ad0673de4afba36d5bf135a0cfdf9}
+SÌkidom kiÌr·sa 
+\begin{DoxyParams}{Param√©terek}
+{\em os} & -\/ ostream objektum, amire kiÌrunk \\
+\hline
+\end{DoxyParams}
+
+
+Megval√≥s√≠tj√°k a k√∂vetkez≈ëk\+: \hyperlink{classTriangle_a488a0575e8b5064c938fd25349ca7b4a}{Triangle}, \hyperlink{classCircle_a83e4657e09ef0a8336545107dec6e777}{Circle}, \hyperlink{classSquare_abb1e6d3a465f0e10f6d3babf7291df5e}{Square} √©s \hyperlink{classPolygon_aa28b611e64fed7c4c31d8c79f70378ba}{Polygon}.
+
+
+
+\subsection{Bar√°t √©s kapcsol√≥d√≥ f√ºggv√©nyek dokument√°ci√≥ja}
+\index{Shape@{Shape}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Shape@{Shape}}
+\subsubsection[{\texorpdfstring{operator$<$$<$}{operator<<}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{os, }
+\item[{const {\bf Shape} \&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classShape_a5e5a3a2c6c0f680da1136c652c52d3a9}{}\label{classShape_a5e5a3a2c6c0f680da1136c652c52d3a9}
+$<$$<$ operator 
+\begin{DoxyParams}{Param√©terek}
+{\em os} & -\/ ostream objektum, amire kiÌrunk \\
+\hline
+{\em s} & -\/ amit kiÌrunk \\
+\hline
+\end{DoxyParams}
+\index{Shape@{Shape}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Shape@{Shape}}
+\subsubsection[{\texorpdfstring{operator$>$$>$}{operator>>}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::istream\& operator$>$$>$ (
+\begin{DoxyParamCaption}
+\item[{std\+::istream \&}]{is, }
+\item[{{\bf Shape} $\ast$\&}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{classShape_ae8962e5f1d7ad014e8ce115de0b3dfdc}{}\label{classShape_ae8962e5f1d7ad014e8ce115de0b3dfdc}
+\begin{quote}
+\begin{quote}
+operator \end{quote}
+\end{quote}
+
+\begin{DoxyParams}{Param√©terek}
+{\em is} & -\/ istream objektum, amirˆl beolvasunk \\
+\hline
+{\em s} & -\/ ahova beolvasunk \\
+\hline
+\end{DoxyParams}
+
+
+Ez a dokument√°ci√≥ az oszt√°lyr√≥l a k√∂vetkez≈ë f√°jlok alapj√°n k√©sz√ºlt\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Shape_8h}{Shape.\+h}\item 
+Shape.\+cpp\end{DoxyCompactItemize}
