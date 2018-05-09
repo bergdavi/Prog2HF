@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000" height="1000">
+<circle cx="600" cy="200" r="2" fill="black"/>
+<circle cx="570" cy="400" r="2" fill="black"/>
+<circle cx="500" cy="500" r="2" fill="black"/>
+<circle cx="420" cy="600" r="2" fill="black"/>
+<circle cx="450" cy="600" r="2" fill="black"/>
+<polyline points="800 200, 700.461 55.3055, 525.273 42.9126, 406.356 172.153, 433.257 345.707, 585.719 432.884, 748.935 368.038, 800 200" stroke="green" stroke-width="2" fill="transparent"/>
+<polyline points="429 429, 347.217 123.783, 123.783 347.217, 429 429" stroke="green" stroke-width="2" fill="transparent"/>
+<circle cx="660" cy="500" r="50" stroke="green" stroke-width="2" fill="transparent"/>
+<circle cx="630" cy="300" r="104.403" stroke="green" stroke-width="2" fill="transparent"/>
+<polyline points="425 575, 345 645, 415 725, 495 655, 425 575" stroke="green" stroke-width="2" fill="transparent"/>
+<circle cx="520" cy="480" r="2" fill="black"/>
+<line x1="500" x2="500" y1="0" y2="1000" stroke="blue" stroke-width="2" fill="red" stroke-dasharray="10,10"/>
+<line x1="0" x2="1000" y1="500" y2="500" stroke="blue" stroke-width="2" fill="red" stroke-dasharray="10,10"/>
+<circle cx="500" cy="500" r="100" stroke="blue" fill="transparent" stroke-width="2" stroke-dasharray="10,10"/>
+</svg>

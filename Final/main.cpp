@@ -8,7 +8,7 @@
 #include "Polygon.h"
 #include "gtest_lite.h"
 
-//#define drawShapes
+#define drawShapes
 
 
 using namespace std;
